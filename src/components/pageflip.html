@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>page flip effect with Hammer.js</title>
+        <style>
+
+            html{
+                height: 100%;
+                overflow: hidden;
+            }
+
+            body{
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                font-family: sans-serif ;
+                background-color: #292226;
+            }
+
+            h1{
+                font-weight: normal;
+            }
+
+            h2{
+                font-weight: normal;
+            }
+
+            img{
+                width: 300px;
+                height: 300px;
+                padding-left: 100px;
+                padding-top: 150px;
+            }
+
+            .scene{
+                width: 35%;
+                height: 90%;
+                margin: 5% 5% 5% 50%;
+                perspective: 1000px;
+            }
+
+            .book{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+            }
+
+            .page{
+                padding-top: 60px;
+                cursor: pointer;
+                position: absolute;
+                color: black;
+                width: 100%;
+                height: 100%;
+                transition: 1.5s transform;
+                transform-style: preserve-3d;
+                transform-origin: left center;
+            }
+
+            .page1{
+                text-align: left;
+            }
+
+            .page1 h1{
+                padding-top: 250px;
+                font-size: 85px;
+                margin-left: 50px;   
+                line-height: 0cm;       
+            }
+
+            .page1 h2{
+                padding-top: 20px;
+                font-size: 85px;
+                margin-left: 50px;   
+                line-height: 0cm;       
+            }
+
+            .page1 h3{
+                font-size: 50px;
+                margin-left: 50px;
+                color: gray;
+                font-weight: normal;
+            }
+
+            .page3 h1{
+                padding-top: 50px;
+                font-size: 60px;
+                margin-left: 50px;   
+                line-height: 0cm;       
+            }
+
+            .page3 h2{
+                padding-top: 20px;
+                font-size: 60px;
+                margin-left: 50px;   
+                line-height: 0cm;       
+            }
+
+            .page3 h3{
+                padding-top: 20px;
+                font-size: 25px;
+                margin-left: 50px;
+                font-weight: normal;
+            }
+
+            .page3 p{
+                font-size: 20px;
+                margin-left: 50px;
+                font-weight: lighter;
+                margin-right: 50px;
+            }
+
+            .page3 h4{
+                padding-top: 110px;
+                font-size: 20px;
+                margin-left: 50px;
+                font-weight: lighter;
+            }
+
+            .page5 h1{
+                padding-top: 50px;
+                font-size: 25px;
+                margin-left: 50px;   
+                line-height: 0cm;       
+            }
+
+            .page5 ol{
+                padding-top: 50px;
+                font-size: 20px;
+                margin-left: 50px;    
+                font-weight: lighter;   
+            }
+
+            .page6 h1{
+                padding-top: 600px;
+                font-size: 20px;
+                text-align: center;    
+                font-weight: lighter;   
+            }
+
+            .front,
+            .back{
+                position: absolute;
+                width: 100%;
+                height: 700px;
+                box-sizing: border-box;
+                backface-visibility: hidden;
+                background:-webkit-gradient(linear, 0% 0%, 100% 100%, from(#efeaf2), to(#dad6dc));
+                filter: drop-shadow(10px 10px 5px black);
+            }
+
+            .back{
+                transform: rotateY(180deg);
+            }
+
+            .page.active{
+                z-index: 1;
+            }
+
+            .page.flipped{
+                transform: rotateY(-180deg);
+            }
+
+            .page.flipped:last-of-typed{
+                z-index: 1;
+            }
+
+            p{
+                margin: 0 0 0.lem;
+                text-indent: lem;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="scene">
+            <article class="book">
+                <section class="page active">
+                    <div class="front">
+                        <div class="page1">
+                            <h1>penn</h1>
+                            <h2>playbook</h2>
+                            <h3>spark</h3>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="page2">
+                            <img src="/public/spark.png">
+                        </div>
+                    </div>                       
+                </section>
+                <section class="page">
+                    <div class="front">
+                        <div class="page3">
+                            <h1>penn</h1>
+                            <h2>playbook</h2>
+                            <h3>subcaption</h3>
+                            <p> 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur suscipit sunt perferendis nemo esse mollitia aperiam, officiis repellendus nihil in aspernatur voluptas eaque atque laboriosam, et fuga fugit hic voluptate ipsum assumenda repellat! Laudantium quibusdam pariatur porro saepe, unde repudiandae.
+                            </p>
+                            <h4>special thanks to pengu pengu</h4>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="page4">
+                            <img src="/public/spark.png">
+                        </div>
+                    </div>
+                </section>
+                <section class="page">
+                    <div class="front">
+                        <div class="page5">
+                            <h1>Table of Contents</h1>
+                            <ol>
+                                <li>Penn Wrapped</li>
+                                <li>Class X</li>
+                                <li>Under the Button</li>
+                                <li>Penn In Touch</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="page6">
+                            <h1>&copy PennSpark</h1>
+                        </div>                       
+                    </div>
+                </section>
+            </article>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="hammer.min.js"></script>
+        <script>
+            
+            var currentPage = 0;
+                $('.book')
+                .on('click','.active', nextPage)
+                .on('click', '.flipped', prevPage)
+
+            $('.book').hammer().on("swipeleft", nextPage);
+            $('.book').hammer().on("swipeleft", prevPage);
+
+            function prevPage(){
+                $('.flipped')
+                .last()
+                .removeClass('flipped')
+                .addClass('active')
+                .siblings('.page')
+                .removeClass('active');
+            }
+
+            function nextPage(){
+                $('.active')
+                .removeClass('active')
+                .addClass('flipped')
+                .next('.page')
+                .addClass('active')
+                .siblings();
+            }
+
+        </script>
+
+    </body>
+</html>

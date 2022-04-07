@@ -10,7 +10,6 @@ import Form from './components/Form';
 import Canvas from './components/Canvas';
 import Home from './components/Home';
 
-
 export function App() {
     return (
       <ErrorBoundary>
@@ -20,6 +19,10 @@ export function App() {
               <Route index element={<Navigate replace to='home'/>} />
               <Route path='home' element={<Home />} />
               <Route path='canvas' element={<Canvas />} />
+            </Route>
+            <Route path='/under-the-button'>
+              <Route path=":qId" element={<UnderButton />} />
+              <Route index element={<UnderButton />} />
             </Route>
           </Routes>
         </BrowserRouter>

@@ -38,7 +38,7 @@ body {
   margin-top: -2.5em;
   @media (max-width: $small) {margin-top: -1.5em;}
 }
-
+/*
 .button-label {
   display: inline-block;
   padding: 1em 2em;
@@ -68,40 +68,93 @@ body {
     margin: 0.25em;
   }
 }
+*/
+
+.button-label {
+  display: inline-block;
+  margin: 0.5em;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: 0s;
+  user-select: none;
+  h1 {
+    font-size: 1em;
+    font-family: $font-stack;
+  }
+  &:hover {
+  }
+  &:active {
+    background: url(svg/button.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  @media (max-width: $small) {
+    padding: 0em 1em 3px;
+    margin: 0.25em;
+  }
+}
+#yes-button + .button-label{
+  background: url(svg/button.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+#no-button + .button-label{
+  background: url(svg/buttonRed.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+#maybe-button + .button-label{
+  background: url(svg/buttonGreen.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+#other-button + .button-label{
+  background: url(svg/buttonYellow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
 
 #yes-button:checked + .button-label {
-  background: $green;
-  color: $light;
+  background: url(svg/buttonDown.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   &:hover {
-    background: darken($green, 5%);
-    color: darken($light, 5%);
   }
 }
 
+
 #no-button:checked + .button-label {
-  background: $red;
-  color: $light;
+  background: url(svg/buttonRedDown.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   &:hover {
-    background: darken($red, 5%);
-    color: darken($light, 5%);
   }
 }
 
 #maybe-button:checked + .button-label {
-  background: $blue;
-  color: $light;
+  background: url(svg/buttonGreenDown.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   &:hover {
-    background: darken($blue, 5%);
-    color: darken($light, 5%);
   }
 }
 
 #other-button:checked + .button-label {
-  background: $blue;
-  color: $light;
+  background: url(svg/buttonYellowDown.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   &:hover {
-    background: darken($blue, 5%);
-    color: darken($light, 5%);
   }
 }
 

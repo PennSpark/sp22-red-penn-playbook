@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
 import './UnderButton.scss';
+import buttonSvg from './svg/button.svg'
 const UnderButtonQuestion = (qid) => {
     let { qId } = useParams();
     return (

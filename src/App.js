@@ -10,6 +10,7 @@ import Form from './components/Form';
 import Canvas from './components/Canvas';
 import Home from './components/Home';
 import UnderButton from './components/UnderButton';
+import Navbar from "./components/Navbar.js";
 
 export function App() {
     return (

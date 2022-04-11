@@ -1,0 +1,42 @@
+nav {
+    transform: rotate(90deg);
+    position: relative;
+    top: 400px;
+    right: -200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.navlink-title {
+    min-height: 60px;
+    width: 200px;
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+    background-color: blue;
+    position: relative;
+}
+
+#home {
+    background-color: red;
+}
+
+.navlink-dot {
+    margin-top: -0.5rem;
+    opacity: 0;
+    transition: opacity 200ms linear;
+}
+
+.navlink-title:hover .headerlink-dot {
+    opacity: 1;
+}
+
+.navlink-dot-active {
+    margin-top: -0.5rem;
+    display: block;
+}
+
+.navlink-no-link {
+    pointer-events: none;
+}

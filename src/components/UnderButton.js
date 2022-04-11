@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { useParams, Link } from "react-router-dom"
 import UnderButtonQuestion from './UnderButtonQuestion';
+import './UnderButton.scss';
+
 const UnderButton = () => {
     let { qId } = useParams();
     return (

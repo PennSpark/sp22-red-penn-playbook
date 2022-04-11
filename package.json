@@ -9,12 +9,13 @@
     "ef-infinite-canvas": "^0.5.2-alpha",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-pageflip": "^2.0.3",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "SET PORT=3000 && react-scripts start",
+    "start": "PORT=3000 react-scripts start",
     "build": "PORT=6000 react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

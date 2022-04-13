@@ -1,0 +1,352 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Red+Hat+Mono:wght@500;700&display=swap";
+@import "https://fonts.googleapis.com/css?family=Lato:300,400,900";
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
+}
+
+html {
+  background-color: #3d3339;
+}
+
+html, body {
+  height: 100%;
+  color: #fff;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: Red Hat Mono;
+}
+
+.landing-page {
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.landing-page p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+html, body {
+  display: border-box;
+  background-color: #c4bec6;
+}
+
+.container {
+  width: 800px;
+  z-index: 1;
+  perspective: 3000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%;
+}
+
+.container .book {
+  width: 400px;
+  height: 550px;
+  -webkit-box-shadow: 13px 13px 8px #97929999;
+  -moz-box-shadow: 13px 13px 8px #805c8f99;
+  color: #2d2d2d;
+  background: linear-gradient(45deg, #dad5dc 0%, #f2ebf4 100%);
+  border-radius: 2px 4px 4px 2px;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 700;
+  display: block;
+  position: relative;
+  box-shadow: 13px 13px 8px #97929999;
+}
+
+.container .book > div, .container .front > div {
+  display: block;
+  position: absolute;
+}
+
+.container .front > div {
+  width: 400px;
+  height: 550px;
+}
+
+.container .left-side {
+  width: 40px;
+  height: 550px;
+  background-color: #e8e5ea;
+  left: -20px;
+  transform: rotate3d(0, 1, 0, -90deg);
+}
+
+.cover svg {
+  width: 300px;
+  margin-top: -100px;
+  margin-left: -110px;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+
+#eye-right {
+  padding-left: 185px;
+}
+
+.cover .title-up {
+  position: absolute;
+  top: 300px;
+  left: 47px;
+}
+
+.cover .title-down {
+  position: absolute;
+  top: 350px;
+  left: 47px;
+}
+
+.cover .num-down {
+  position: relative;
+  top: 65px;
+  left: -95px;
+}
+
+.author {
+  opacity: .8;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  position: absolute;
+  top: 475px;
+  left: 50px;
+}
+
+.container .front > div {
+  border-radius: 0 3px 3px 0;
+  box-shadow: inset 4px 0 10px #0000001a;
+}
+
+.container .front:after {
+  content: "";
+  width: 1px;
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: -1px;
+}
+
+.container .cover:after {
+  content: "";
+  width: 3px;
+  background: #0000001a;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+}
+
+.container h2 {
+  width: 500px;
+  height: 40px;
+  color: #2b2b2b;
+  text-align: right;
+  transform-origin: 0 0;
+  padding-right: 10px;
+  font-size: 15px;
+  line-height: 40px;
+  transform: rotate(90deg)translateY(-40px);
+}
+
+.cover {
+  background: linear-gradient(45deg, #dad5dc 0%, #f2ebf4 100%);
+}
+
+.left-side h2 span:first-child {
+  padding-right: 20px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.left-side h2 span:last-child {
+  font-family: acumin-pro, sans-serif;
+}
+
+.leftpage {
+  width: 400px;
+  height: 550px;
+  -webkit-box-shadow: 13px 13px 8px #97929999;
+  -moz-box-shadow: 13px 13px 8px #805c8f99;
+  color: #2b2b2b;
+  background: linear-gradient(to right, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #d3c8c8);
+  border-radius: 2px 4px 4px 2px;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  display: block;
+  position: relative;
+  box-shadow: 13px 13px 8px #97929999;
+}
+
+.rightpage {
+  width: 400px;
+  height: 550px;
+  -webkit-box-shadow: 13px 13px 8px #97929999;
+  -moz-box-shadow: 13px 13px 8px #805c8f99;
+  color: #2b2b2b;
+  background: linear-gradient(to left, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #d3c8c8);
+  border-radius: 2px 4px 4px 2px;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  display: block;
+  position: relative;
+  box-shadow: 13px 13px 8px #97929999;
+}
+
+.rightpage .toc, .rightpage .titlepage {
+  padding-top: 20%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.rightpage h1 {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.rightpage h3, .rightpage p {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #efefef;
+}
+
+html {
+  background: #efefef;
+}
+
+body {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4 {
+  color: #292929;
+}
+
+.container {
+  height: 100%;
+  min-height: 100%;
+  width: min(100%, 1000px);
+  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+}
+
+.text-container {
+  height: 50vh;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.button-container {
+  margin-top: 10vh;
+}
+
+.button-wrap {
+  text-align: center;
+  margin-top: -2.5em;
+  position: relative;
+  top: 50%;
+}
+
+@media (max-width: 40em) {
+  .button-wrap {
+    margin-top: -1.5em;
+  }
+}
+
+.button-label {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  text-align: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: .5em;
+  padding-bottom: 1em;
+  transition: all;
+  display: inline-block;
+}
+
+.button-label h1 {
+  font-family: Lato, sans-serif;
+  font-size: 1em;
+}
+
+@media (max-width: 40em) {
+  .button-label {
+    margin: .25em;
+    padding: 0 1em 3px;
+  }
+}
+
+#yes-button + .button-label {
+  width: 23vh;
+  height: 20vh;
+  background: url("button.23e0daa6.svg") bottom / contain no-repeat;
+}
+
+#no-button + .button-label {
+  width: 23vh;
+  height: 20vh;
+  background: url("buttonRed.8867d1eb.svg") bottom / contain no-repeat;
+}
+
+#maybe-button + .button-label {
+  width: 23vh;
+  height: 20vh;
+  background: url("buttonGreen.01de7c76.svg") bottom / contain no-repeat;
+}
+
+#other-button + .button-label {
+  width: 23vh;
+  height: 20vh;
+  background: url("buttonYellow.733d7665.svg") bottom / contain no-repeat;
+}
+
+#yes-button:checked + .button-label {
+  background: url("buttonDown.a8934d4d.svg") bottom / contain no-repeat;
+}
+
+#no-button:checked + .button-label {
+  background: url("buttonRedDown.58c4f35c.svg") bottom / contain no-repeat;
+}
+
+#maybe-button:checked + .button-label {
+  background: url("buttonGreenDown.53d4e42d.svg") bottom / contain no-repeat;
+}
+
+#other-button:checked + .button-label {
+  background: url("buttonYellowDown.6808f186.svg") bottom / contain no-repeat;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=index.11712a00.css.map */

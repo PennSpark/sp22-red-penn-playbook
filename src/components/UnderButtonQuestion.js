@@ -9,12 +9,29 @@ const UnderButtonQuestion = (qid) => {
     const [ans, setAns] = useState('')
     const loadBack = (qId > 1) && (qId < 16)
     const loadNext = (qId > 0) && (qId < 15) && (ans !== '')
-    const loadRes = (parseInt(qId) === 15)
-    console.log(loadRes)
     const [question, setQuestion] = useState('')
-
+    // const [submit, setSubmit] = useState(false)
+    const loadRes = (parseInt(qId) === 15) && ans
     // console.log(qid)
     // console.log(loadBack)
+
+    // useEffect(() => {
+    //     const getSubmit = async () => {
+    //         try {
+    //             if (parseInt(qId) === 15) {
+    //                 console.log("here")
+    //                 const { data } = await axios.get('/api/allAnswered')
+    //                 setSubmit(data.submit)
+    //                 console.log("submit" + submit)
+    //             }
+    //         } catch (e) {
+    //             alert('An error occured. Please try again.')
+    //         }
+    //     }
+
+    //     getSubmit()
+    // }, [qId])
+
     useEffect(() => {
         const getQuestion = async () => {
             try {
@@ -40,6 +57,12 @@ const UnderButtonQuestion = (qid) => {
             alert('An error occured. Please try again.')
         }
     }
+    const back = () => {
+        setAns('')
+        var ele = document.getElementsByName("accept-offers");
+        for (var i = 0; i < ele.length; i++)
+            ele[i].checked = false;
+    }
     return (
         <>
             {/* <Link to={`../`}>
@@ -56,6 +79,7 @@ const UnderButtonQuestion = (qid) => {
                 <h3>B) {question.op2}</h3>
                 {question.op3 && <h3>C) {question.op3}</h3>}
                 {question.op4 && <h3>D) {question.op4}</h3>}
+                {/* {(parseInt(qId) === 15)  && <h4> All 15 questions must be answered to submit! </h4>} */}
             </div>
             <div class="container button-container">
                 <input class="hidden radio-label" onChange={e => setAns("A")} type="radio" name="accept-offers" id="yes-button" />
@@ -74,11 +98,12 @@ const UnderButtonQuestion = (qid) => {
                 {question.op4 && <label class="button-label" for="other-button">
                     <h1>D</h1>
                 </label>}
+                
             </div>
 
-
+            
             {loadBack && <Link to={`../${parseInt(qId) - 1}`}>
-                <button type="button">
+                <button type="button" onClick={() => back()}>
                     Back
                 </button></Link>}
             {loadNext && <Link to={`../${parseInt(qId) + 1}`}>

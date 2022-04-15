@@ -9,6 +9,7 @@ const questionSchema = new Schema({
   op2: { type: String},
   op3: { type: String},
   op4: { type: String},
+  numOp: { type: Number, required: true }
 })
 
 const Question = model('Question', questionSchema)

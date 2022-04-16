@@ -10,18 +10,24 @@ import Form from './components/Form';
 import Canvas from './components/Canvas';
 import Home from './components/Home';
 import UnderButton from './components/UnderButton';
-import UnderButtonResults from './components/UnderButtonResults';
+import Navbar from "./components/Navbar.js";
+
 
 export function App() {
   return (
-
     <ErrorBoundary>
+
       <BrowserRouter>
         <Routes>
+          <Route path='/:page' component={<Navbar />} />
+          <Route exact path='/' component={<Navbar />} />
+
           <Route path='/'>
+
             <Route index element={<Navigate replace to='home' />} />
             <Route path='home' element={<Home />} />
             <Route path='canvas' element={<Canvas />} />
+              
           </Route>
           <Route path='/under-the-button'>
             <Route path=":qId" element={<UnderButton />} />

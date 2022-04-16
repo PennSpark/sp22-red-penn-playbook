@@ -23,11 +23,15 @@ export function App() {
           <Route exact path='/' component={<Navbar />} />
 
           <Route path='/'>
+
+            <Route index element={<Navigate replace to='home' />} />
             <Route path='home' element={<Home />} />
             <Route path='canvas' element={<Canvas />} />
+              
           </Route>
           <Route path='/under-the-button'>
             <Route path=":qId" element={<UnderButton />} />
+            <Route path="results" element={<UnderButtonResults />} />
             <Route index element={<UnderButton />} />
           </Route>
         </Routes>

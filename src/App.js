@@ -19,8 +19,7 @@ export function App() {
 
       <BrowserRouter>
         <Routes>
-        <Route path='/:page' component={Navbar} />
-        <Route exact path='/' component={Navbar} />
+
           <Route path='/'>
             <Route index element={<Navigate replace to='home' />} />
             <Route path='home' element={<Home />} />
@@ -28,6 +27,7 @@ export function App() {
           </Route>
           <Route path='/under-the-button'>
             <Route path=":qId" element={<UnderButton />} />
+            <Route path="results" element={<UnderButtonResults />} />
             <Route index element={<UnderButton />} />
           </Route>
         </Routes>

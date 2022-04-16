@@ -8,10 +8,9 @@ const Canvas = props => {
     useEffect(() => {
         let canvas = canvasRef.current;
         let context = canvas.getContext('2d');
-        //Our first draw
-        context.beginPath();
-        context.arc(50, 50, 50, 0, 2 * Math.PI);
-        context.fill();
+        
+        context.font = "30px Arial";
+        context.fillText("hello world", 50, 50);
       });
       
       return <canvas ref={canvasRef} {...props}/>

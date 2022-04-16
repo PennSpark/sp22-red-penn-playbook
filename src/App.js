@@ -19,10 +19,10 @@ export function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path='/:page' component={<Navbar />} />
-          <Route exact path='/' component={<Navbar />} />
-
+        <Route path='/:page' component={Navbar} />
+        <Route exact path='/' component={Navbar} />
           <Route path='/'>
+            <Route index element={<Navigate replace to='home' />} />
             <Route path='home' element={<Home />} />
             <Route path='canvas' element={<Canvas />} />
           </Route>

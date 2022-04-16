@@ -3,13 +3,12 @@ import './Navbar.css';
 import { Link, useParams } from 'react-router-dom';
 
 const NavLink = ({ page, selected }) => {
-    const title = page.charAt(0).toUpperCase() + page.slice(1);
+    const title = page.split('-').join(' ');
     // let className = selected ? 'navlink-no-link ' : '';
     let className = 'navlink-title';
 
     return (
-        <Link to={`/${page}`} className={className}>
-            {selected ? 'True' : 'False'}
+        <Link to={`/${page}`} className={className} id={page}>
             {title}
             <div className={selected ? 'navlink-dot-active' : 'navlink-dot'}>
                 •
@@ -24,9 +23,11 @@ const Navbar = () => {
 
     return (
         <nav>
-            <NavLink page='home' selected={page === 'home'} />
+            <NavLink page='home' selected={page === 'home'} style="background-color:red;"/>
+            <NavLink page='class-x' />
+            <NavLink page='wrapped' />
             <NavLink page='under-the-button' selected={page === 'under-the-button'} />
-            <NavLink page='contact' selected={page === 'contact'} />
+            <NavLink page='confessions' selected={page === 'confessions'} />
         </nav>
     );
 };

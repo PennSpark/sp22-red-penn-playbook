@@ -1,10 +1,10 @@
 nav {
     transform: rotate(90deg);
-    position: relative;
-    top: 400px;
-    right: -200px;
+    position: absolute;
+    top: -20vh;
+    right: 20vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     row-gap: 30px;
 }
 
@@ -14,12 +14,27 @@ nav {
     color: white;
     text-decoration: none;
     padding: 0 5px;
-    background-color: blue;
     position: relative;
 }
 
 #home {
-    background-color: red;
+    background-color: #ead2dd;
+}
+
+#class-x {
+    background-color: #577ed2;
+}
+
+#wrapped {
+    background-color: #54706b;
+}
+
+#under-the-button {
+    background-color: #ffdb78;
+}
+
+#confessions {
+    background-color: #cf6c5d;
 }
 
 .navlink-dot {

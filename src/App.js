@@ -31,7 +31,6 @@ export function App() {
           </Route>
           <Route path='/under-the-button'>
             <Route path=":qId" element={<UnderButton />} />
-            <Route path="results" element={<UnderButtonResults />} />
             <Route index element={<UnderButton />} />
           </Route>
         </Routes>

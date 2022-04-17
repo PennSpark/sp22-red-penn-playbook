@@ -64,6 +64,12 @@ input {
   text-align: left;
 }
 
+button {
+  background-color: $gold;
+  border: none;
+  border-radius: 4px;
+}
+
 .text-container {
   height: 50vh;
   text-align: center;

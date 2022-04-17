@@ -4,6 +4,7 @@ import UnderButtonQuestion from './UnderButtonQuestion';
 import Navbar from './Navbar.js'
 import './UnderButton.scss';
 import axios from 'axios';
+import {ReactComponent as LoginButton} from './svg/button-outline.svg';
 
 const UnderButton = () => {
     let { qId } = useParams()
@@ -27,7 +28,7 @@ const UnderButton = () => {
             <div class="login-container">
                 <div class="login">
                     {!qId && <h2>Log in</h2>}
-                    {!qId && <img src="svg/button-outline.svg" alt="Button" />}
+                    {!qId && <LoginButton/>}
                     <div class="login-inputs">
                         {!qId && <h4>Penn Email</h4>}
                         {!qId && <input onChange={e => setEmail(e.target.value)} type="name" className="form-control" id="name" />}

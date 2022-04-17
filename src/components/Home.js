@@ -43,8 +43,10 @@ class Home extends React.Component {
           <div className="rightpage">
             <div className="toc">
               <h1>Table of Contents</h1>
-              <p>1. Penn Wrapped</p>
-              <p>2. Class X</p>
+              <Link to="/canvas" className="link">1. Penn Wrapped</Link>
+              <br />
+              <Link to="/canvas" className="link">2. Class X</Link>
+              <br />
               <Link to="/canvas" className="link">3. Penn in Touch</Link>
               <br />
               <Link to="/under-the-button" className="link">4. Under the Button</Link>

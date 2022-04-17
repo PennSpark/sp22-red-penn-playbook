@@ -3,6 +3,8 @@
 $dark: #292929;
 $light: #efefef;
 $red: #D91E18;
+$gold: #EFDC9A;
+$yellow: #FFF9EF;
 $green: #2ECC71;
 $blue: #4183D7;
 $font-stack: "Lato", sans-serif;
@@ -14,11 +16,11 @@ $small: 40em;
   
 html, body {
   height: 100%;
-  background-color: $light;
+  background-color: $yellow;
 }
 
 html {
-  background: $light;
+  background: $yellow;
 }
 
 body {
@@ -27,8 +29,39 @@ body {
 
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
   color: $dark;
+}
+
+input {
+  border: 1px solid $gold;
+}
+
+.utb-description {
+  height: 15em;
+  width: 20em;
+  margin: auto;
+  text-align: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  height: 15em;
+  width: 20em;
+  background-color: white;
+  border: 4px solid $gold;
+  border-radius: 17px;
+  margin: auto;
+  text-align: center;
+}
+
+.login-inputs {
+  padding-left: 1em;
+  text-align: left;
 }
 
 .text-container {

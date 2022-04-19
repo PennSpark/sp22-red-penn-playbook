@@ -1,0 +1,20 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+
+
+.pw-about_container {
+    width: 51em; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.pw-active {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    background-color: #54706b;
+    opacity: 0.95; 
+    right: 210px;
+    top: 190px;
+}

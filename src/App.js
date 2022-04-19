@@ -10,8 +10,12 @@ import Form from './components/Form';
 import Canvas from './components/Canvas';
 import Home from './components/Home';
 import UnderButton from './components/UnderButton';
-import Navbar from "./components/Navbar.js";
-
+import UnderButtonAbout from './components/UnderButtonAbout';
+import PenninTouchAbout from './components/PennInTouchAbout';
+import ClassXAbout from './components/ClassXAbout';
+import PennWrappedAbout from './components/PennWrappedAbout';
+import HomeAbout from './components/HomeAbout';
+import MainLayout from './components/MainLayout';
 
 export function App() {
   return (
@@ -23,11 +27,38 @@ export function App() {
           <Route path='/'>
             <Route index element={<Navigate replace to='home' />} />
             <Route path='home' element={<Home />} />
-            <Route path='canvas' element={<Canvas />} />
+            <Route path='penn-in-touch' element={<Canvas />} />
           </Route>
           <Route path='/under-the-button'>
             <Route path=":qId" element={<UnderButton />} />
             <Route index element={<UnderButton />} />
+          </Route>
+          <Route path='/about'>
+            <Route path='under-the-button' element={
+              <MainLayout>
+                <UnderButtonAbout />
+              </MainLayout>
+            }/>
+            <Route path='penn-in-touch' element={
+              <MainLayout>
+                <PenninTouchAbout />
+              </MainLayout>
+            }/>
+            <Route path='class-x' element={
+              <MainLayout>
+                <ClassXAbout />
+              </MainLayout>
+            }/>
+            <Route path='penn-wrapped' element={
+              <MainLayout>
+                <PennWrappedAbout />
+              </MainLayout>
+            }/>
+            <Route path='penn-playbook' element={
+              <MainLayout>
+                <HomeAbout />
+              </MainLayout>
+            }/>
           </Route>
         </Routes>
       </BrowserRouter>

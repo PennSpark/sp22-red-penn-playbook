@@ -67,7 +67,7 @@ const UnderButtonQuestion = (qid) => {
     const back = () => {
         setAns('')
         var ele = document.getElementsByName("accept-offers");
-        navigate(`../${parseInt(qId) + 1}`)
+        navigate(`../${parseInt(qId) - 1}`)
         for (var i = 0; i < ele.length; i++)
             ele[i].checked = false;
     }
@@ -78,7 +78,7 @@ const UnderButtonQuestion = (qid) => {
                     About
                 </button></Link> */}
             <div class="text-container">
-                <h1>Under the Button</h1>
+                <h1>By the Button</h1>
                 <h4>Q : {qId}/15</h4>
                 {console.log(question)}
                 {console.log(qId)}
@@ -109,19 +109,22 @@ const UnderButtonQuestion = (qid) => {
                 
             </div>
 
-            
+            <div>
+            <div className="menu-buttons">
             {loadBack &&
-                <button type="button" onClick={() => back()}>
+                <button type="button" className="utb-back" onClick={() => back()}>
                     Back
                 </button>}
             {loadNext &&
-                <button type="button" onClick={() => updateAnswer()}>
+                <button type="button" className="utb-next" onClick={() => updateAnswer()}>
                     Next
                 </button>}
             {loadRes && 
-                <button type="button" onClick={() => updateAnswer()}>
+                <button type="button" className="utb-submit" onClick={() => updateAnswer()}>
                     Submit!
                 </button>}
+            </div>
+            </div>
         </>
     );
 }

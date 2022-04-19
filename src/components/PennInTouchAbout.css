@@ -1,0 +1,39 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+
+
+.pit-about_container {
+    width: 51em; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-h1 {
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44.47px;
+    line-height: 58px;
+    letter-spacing: -0.485869px;
+    margin-top: 80px;
+    color: #2D2D2D;
+}
+
+.about-p {
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: left;
+    color: #2D2D2D;
+}
+
+.pit-active {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    background-color: #cf6c5d;
+    opacity: 0.95; 
+    right: 30px;
+    top: 190px;
+}

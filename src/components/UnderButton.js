@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { useParams, Link } from "react-router-dom"
 import UnderButtonQuestion from './UnderButtonQuestion';
-import Navbar from './Navbar.js'
+import UnderButtonResults from './UnderButtonResults';
 import './UnderButton.scss';
 import axios from 'axios';
 import { ReactComponent as LoginButton } from './svg/button-outline.svg';
@@ -19,28 +19,27 @@ const UnderButton = () => {
     }
     return (
         <>
-            <Navbar />
-            <div class="utb-description">
-                {!qId && <h1>Under the Button</h1>}
-                {!qId && <p>Under the Button is a quiz to see how average or ~ unique ~ of a Penn Student you are!
-                    Be ready to express your opinions on some of the most controversal questions like milk or cereal first!</p>}
-            </div>
-            <div class="login-container">
+            {!qId && <div class="utb-description">
+                {!qId && <h1>By the Button</h1>}
+                {!qId && <p>Not a Penn student? Unfortunately, this quiz is reserved for Penn students but please check out the other installations in Penn Playbook!</p>}
+            </div>}
+            {!qId && <div class="login-container">
                 <div class="login">
                     {!qId && <h2>Log in</h2>}
                     {!qId && <LoginButton />}
                     <div class="login-inputs">
-                        {!qId && <h4>Penn Email</h4>}
+                        {!qId && <h4 className="penn-email">Penn Email</h4>}
                         {!qId && <input onChange={e => setEmail(e.target.value)} type="name" className="form-control" id="name" />}
                     </div>
                     {!qId && email && String(email).includes('upenn.edu') && <Link to="../1">
-                        <button type="button" onClick={() => signUp()}>
-                            Take the Quiz!
+                        <button type="button" onClick={() => signUp()} className="log-in">
+                            Log In
                         </button></Link>}
                 </div>
-            </div>
+            </div>}
             {!qId && <br />}
-            {qId && <UnderButtonQuestion qId={qId}></UnderButtonQuestion>}
+            {qId && qId == "results" && <UnderButtonResults />}
+            {qId && qId != "results" && <UnderButtonQuestion qId={qId}></UnderButtonQuestion>}
         </>
     );
 }

@@ -2,17 +2,13 @@ import React from "react";
 import './Navbar.css';
 import { Link, useParams } from 'react-router-dom';
 
-const NavLink = ({ page, selected }) => {
-    const title = page.split('-').join(' ');
+const NavLink = ({ page, title, selected }) => {
     // let className = selected ? 'navlink-no-link ' : '';
     let className = 'navlink-title';
 
     return (
-        <Link to={`/${page}`} className={className} id={page}>
+        <Link to={`/about/${page}`} className={className} id={page}>
             {title}
-            <div className={selected ? 'navlink-dot-active' : 'navlink-dot'}>
-                •
-            </div>
         </Link>
     );
 };
@@ -23,11 +19,11 @@ const Navbar = () => {
 
     return (
         <nav>
-            <NavLink page='home' selected={page === 'home'} style="background-color:red;"/>
-            <NavLink page='class-x' />
-            <NavLink page='wrapped' />
-            <NavLink page='under-the-button' selected={page === 'under-the-button'} />
-            <NavLink page='confessions' selected={page === 'confessions'} />
+            <NavLink page='penn-playbook' title='About' selected={page === 'home'}/>
+            <NavLink page='class-x' title='Class X'/>
+            <NavLink page='penn-wrapped' title='Penn Wrapped'/>
+            <NavLink page='under-the-button' title='By the Button' selected={page === 'under-the-button'} />
+            <NavLink page='penn-in-touch' title='Penn in Touch' selected={page === 'confessions'} />
         </nav>
     );
 };

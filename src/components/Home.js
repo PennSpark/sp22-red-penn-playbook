@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import './Home.css';
 import HTMLFlipBook from 'react-pageflip';
 import { Link } from 'react-router-dom'; 
+import spark from './spark.png';
 
 class Home extends React.Component {
     /*componentDidMount() {
@@ -30,7 +31,9 @@ class Home extends React.Component {
               </div>
             </div>
           </div>
-          <div className="leftpage"/>
+          <div className="leftpage">
+            <img src={spark} className="spark"/>
+          </div>
           <div className="rightpage"> 
             <div className="titlepage">
               <h1>Penn Playbook</h1>
@@ -43,13 +46,19 @@ class Home extends React.Component {
           <div className="rightpage">
             <div className="toc">
               <h1>Table of Contents</h1>
-              <Link to="/canvas" className="link">1. Penn Wrapped</Link>
+              <Link to="/about/penn-playbook" className="link">About</Link>
               <br />
-              <Link to="/canvas" className="link">2. Class X</Link>
               <br />
-              <Link to="/canvas" className="link">3. Penn in Touch</Link>
+              <Link to="/about/penn-wrapped" className="link">Penn Wrapped</Link>
               <br />
-              <Link to="/under-the-button" className="link">4. Under the Button</Link>
+              <br />
+              <Link to="/about/class-x" className="link">Class X</Link>
+              <br />
+              <br />
+              <Link to="/about/penn-in-touch" className="link">Penn in Touch</Link>
+              <br />
+              <br />
+              <Link to="/about/under-the-button" className="link">Under the Button</Link>
             </div>
           </div>
         </HTMLFlipBook>

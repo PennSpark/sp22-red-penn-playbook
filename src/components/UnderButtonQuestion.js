@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react'
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
 import './UnderButton.scss';
 import buttonSvg from './svg/button.svg'
@@ -12,6 +12,7 @@ const UnderButtonQuestion = (qid) => {
     const [question, setQuestion] = useState('')
     // const [submit, setSubmit] = useState(false)
     const loadRes = (parseInt(qId) === 15) && ans
+    const navigate = useNavigate()
     // console.log(qid)
     // console.log(loadBack)
 
@@ -37,7 +38,6 @@ const UnderButtonQuestion = (qid) => {
             try {
                 const { data } = await axios.post('/api/question', { number: qId })
                 setQuestion(data)
-                console.log("here")
             } catch (e) {
                 alert('An error occured. Please try again.')
             }
@@ -51,8 +51,15 @@ const UnderButtonQuestion = (qid) => {
             await axios.post(`/api/updateAns${qId}`, { _id: user.data.id, ans: ans })
             setAns('')
             var ele = document.getElementsByName("accept-offers");
-            for (var i = 0; i < ele.length; i++)
-                ele[i].checked = false;
+            if (parseInt(qId) === 15) {
+                console.log("here")
+                navigate(`../results`)
+            } else {
+                navigate(`../${parseInt(qId) + 1}`)
+                for (var i = 0; i < ele.length; i++)
+                    ele[i].checked = false;
+            }
+            
         } catch (e) {
             alert('An error occured. Please try again.')
         }
@@ -60,6 +67,7 @@ const UnderButtonQuestion = (qid) => {
     const back = () => {
         setAns('')
         var ele = document.getElementsByName("accept-offers");
+        navigate(`../${parseInt(qId) + 1}`)
         for (var i = 0; i < ele.length; i++)
             ele[i].checked = false;
     }
@@ -82,19 +90,19 @@ const UnderButtonQuestion = (qid) => {
                 {/* {(parseInt(qId) === 15)  && <h4> All 15 questions must be answered to submit! </h4>} */}
             </div>
             <div class="container button-container">
-                <input class="hidden radio-label" onChange={e => setAns("A")} type="radio" name="accept-offers" id="yes-button" />
+                <input class="hidden radio-label" onChange={e => setAns(1)} type="radio" name="accept-offers" id="yes-button" />
                 <label class="button-label" for="yes-button">
                     <h1>A</h1>
                 </label>
-                <input class="hidden radio-label" onChange={e => setAns("B")} type="radio" name="accept-offers" id="no-button" />
+                <input class="hidden radio-label" onChange={e => setAns(2)} type="radio" name="accept-offers" id="no-button" />
                 <label class="button-label" for="no-button">
                     <h1>B</h1>
                 </label>
-                {question.op3 && <input class="hidden radio-label" onChange={e => setAns("C")} type="radio" name="accept-offers" id="maybe-button" />}
+                {question.op3 && <input class="hidden radio-label" onChange={e => setAns(3)} type="radio" name="accept-offers" id="maybe-button" />}
                 {question.op4 && <label class="button-label" for="maybe-button">
                     <h1>C</h1>
                 </label>}
-                {question.op4 && <input class="hidden radio-label" onChange={e => setAns("D")} type="radio" name="accept-offers" id="other-button" />}
+                {question.op4 && <input class="hidden radio-label" onChange={e => setAns(4)} type="radio" name="accept-offers" id="other-button" />}
                 {question.op4 && <label class="button-label" for="other-button">
                     <h1>D</h1>
                 </label>}
@@ -102,18 +110,18 @@ const UnderButtonQuestion = (qid) => {
             </div>
 
             
-            {loadBack && <Link to={`../${parseInt(qId) - 1}`}>
+            {loadBack &&
                 <button type="button" onClick={() => back()}>
                     Back
-                </button></Link>}
-            {loadNext && <Link to={`../${parseInt(qId) + 1}`}>
+                </button>}
+            {loadNext &&
                 <button type="button" onClick={() => updateAnswer()}>
                     Next
-                </button></Link>}
-            {loadRes && <Link to={`../results`}>
+                </button>}
+            {loadRes && 
                 <button type="button" onClick={() => updateAnswer()}>
                     Submit!
-                </button></Link>}
+                </button>}
         </>
     );
 }

@@ -272,20 +272,21 @@ router.get('/getMinAnsCount', async (req, res, next) => {
         users.forEach((user) => {
             const ans = user[`ans${qNum}`]
             if (ans) {
-                switch (String(ans)) {
-                    case "A":
+                switch (ans) {
+                    case '1':
                       counts[0] = counts[0] + 1
                       break;
-                    case "B":
+                    case '2':
                       counts[1] = counts[1] + 1
                       break;
-                    case "C":
+                    case '3':
                     counts[2] = counts[2] + 1
                       break;
-                    case "D":
+                    case '4':
                         counts[3] = counts[3] + 1
                       break;
                     default:
+                        console.log("default")
                         break;
                   }
             }
@@ -293,34 +294,41 @@ router.get('/getMinAnsCount', async (req, res, next) => {
         let minAns = []
         const min = Math.min(...counts)
         if (counts[0] === min) {
-            minAns.push("A")
+            minAns.push('1')
         }
         if (counts[1] === min) {
-            minAns.push("B")
+            minAns.push('2')
         }
         if (counts[2] === min) {
-            minAns.push("C")
+            minAns.push('3')
         }
         if (counts[3] === min) {
-            minAns.push("D")
+            minAns.push('4')
         }
-        // console.log("counts "+counts)
-        // console.log(minAns)
+        console.log("counts "+counts)
+        console.log(minAns)
         return minAns
     }
     let count = 0
+    let answers = []
     try {
         const user = await User.findOne({ "_id" : ObjectId(req.session.user) })
+        const questions = await Question.find()
         for (let i = 1; i <= 15; i++) {
             const minAns = await getMinAns(i)
-            // console.log(minAns)
-            // console.log(user[`ans${i}`])
+            console.log(minAns)
+            console.log(user[`ans${i}`])
+            console.log(user)
             if (minAns.includes(user[`ans${i}`])) {
                 count++
             }
+            answers.push((questions[i - 1][`op${user[`ans${i}`]}`]).toLowerCase())
+
         }
+
         res.send({
-            count : count
+            count : count,
+            answers : answers
         })
     } catch (e) {
         next(e)

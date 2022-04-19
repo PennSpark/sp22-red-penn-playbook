@@ -33,7 +33,7 @@ const UnderButton = () => {
                         {!qId && <h4>Penn Email</h4>}
                         {!qId && <input onChange={e => setEmail(e.target.value)} type="name" className="form-control" id="name" />}
                     </div>
-                    {!qId && email && <Link to="../1">
+                    {!qId && email && String(email).includes('upenn.edu') && <Link to="../1">
                         <button type="button" onClick={() => signUp()}>
                             Take the Quiz!
                         </button></Link>}

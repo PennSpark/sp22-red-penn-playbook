@@ -10,7 +10,7 @@ const cookieParser = require("cookie-parser");
 const session = require('express-session')
 
 require('dotenv').config()
-const MONGO_URI = process.env.MONGODB_URI || `mongodb+srv://${process.env.USER}:${process.env.PASS}@cluster0.tbmhn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+const MONGO_URI = process.env.MONGODB_URI || `mongodb+srv://superuser:Spork2022@cluster0.tbmhn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
 
 mongoose.connect(MONGO_URI, {

@@ -1,0 +1,57 @@
+nav {
+    transform: rotate(90deg);
+    position: absolute;
+    top: -20vh;
+    right: 20vw;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 30px;
+}
+
+.navlink-title {
+    min-height: 60px;
+    width: 200px;
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+    position: relative;
+}
+
+#home {
+    background-color: #ead2dd;
+}
+
+#class-x {
+    background-color: #577ed2;
+}
+
+#wrapped {
+    background-color: #54706b;
+}
+
+#under-the-button {
+    background-color: #ffdb78;
+}
+
+#confessions {
+    background-color: #cf6c5d;
+}
+
+.navlink-dot {
+    margin-top: -0.5rem;
+    opacity: 0;
+    transition: opacity 200ms linear;
+}
+
+.navlink-title:hover .headerlink-dot {
+    opacity: 1;
+}
+
+.navlink-dot-active {
+    margin-top: -0.5rem;
+    display: block;
+}
+
+.navlink-no-link {
+    pointer-events: none;
+}

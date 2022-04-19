@@ -38,8 +38,11 @@ class Home extends React.Component {
             <div className="titlepage">
               <h1>Penn Playbook</h1>
               {/* <h1>Playbook</h1> */}
-              <h3>subcaption</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h3>2022</h3>
+              <p>Spring of 2022 has been a whirlwind of classwork, conversations, and covid exposures for most of us, but as we reach the last few days of this semester we find ourselves wanting to take the time to look back and reflect on the moments that made the last couple months. </p>
+
+              <p>Penn Playbook is meant to be exactly what it sounds like - part play and part book. Through this digital exhibit, we hope to present an assemblage of snapshots and stories that paint a picture of life@penn this semester while allowing you to play around and interact with our site. </p>
+              <p>Thanks for reading, and we hope you enjoy replaying the memories that defined this semester as much as we did!</p>
             </div>
           </div>
           <div className="leftpage"/>
@@ -58,7 +61,7 @@ class Home extends React.Component {
               <Link to="/about/penn-in-touch" className="link">Penn in Touch</Link>
               <br />
               <br />
-              <Link to="/about/under-the-button" className="link">Under the Button</Link>
+              <Link to="/about/under-the-button" className="link">By the Button</Link>
             </div>
           </div>
         </HTMLFlipBook>

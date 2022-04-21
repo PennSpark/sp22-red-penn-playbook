@@ -11,7 +11,8 @@ body {
   font-family: "Red Hat Mono";
 }
 
-html, body{
+html,
+body {
   background-color: #c4bec6;
   display: border-box;
 }
@@ -42,49 +43,50 @@ html, body{
 }
 
 .wholebook {
-  margin-left: auto; 
+  margin-left: auto;
   margin-right: auto;
   width: 800px;
 }
+
 .container .book {
   position: relative;
   display: block;
   width: 400px;
   height: 550px;
   border-radius: 2px 4px 4px 2px;
-  background: linear-gradient(45deg,  #DAD5DC 0%, #f2ebf4 100%);
-  -webkit-box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
--moz-box-shadow: 13px 13px 8px 0px rgba(128, 92, 143, 0.6);
-box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
+  background: linear-gradient(45deg, #DAD5DC 0%, #f2ebf4 100%);
+  -webkit-box-shadow: 13px 13px 8px 0px rgba(151, 146, 153, 0.6);
+  -moz-box-shadow: 13px 13px 8px 0px rgba(128, 92, 143, 0.6);
+  box-shadow: 13px 13px 8px 0px rgba(151, 146, 153, 0.6);
   font-family: 'HK Grotesk';
   font-style: normal;
   font-weight: 700;
   color: #2D2D2D;
 }
 
-.container .book > div,
-.container .front > div {
+.container .book>div,
+.container .front>div {
   display: block;
   position: absolute;
 }
 
 
-.container .front > div {
+.container .front>div {
   width: 400px;
   height: 550px;
 }
 
-.container .left-side{
+.container .left-side {
   width: 40px;
   left: -20px;
   height: 550px;
-  background-color: rgba(232,229,234);
-  -webkit-transform: rotate3d(0,1,0,-90deg);
-  -moz-transform: rotate3d(0,1,0,-90deg);
-  transform: rotate3d(0,1,0,-90deg);
+  background-color: rgba(232, 229, 234);
+  -webkit-transform: rotate3d(0, 1, 0, -90deg);
+  -moz-transform: rotate3d(0, 1, 0, -90deg);
+  transform: rotate3d(0, 1, 0, -90deg);
 }
 
-.cover svg{
+.cover svg {
   position: absolute;
   top: 50%;
   left: 45%;
@@ -97,36 +99,36 @@ box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
   padding-left: 185px;
 }
 
-.cover .title-up{
+.cover .title-up {
   position: absolute;
   top: 300px;
   left: 47px;
 }
 
-.cover .title-down{
+.cover .title-down {
   position: absolute;
   top: 350px;
   left: 47px;
 }
 
-.cover .num-down{
+.cover .num-down {
   position: relative;
   top: 65px;
   left: -95px;
 }
 
-.author{
+.author {
   font-family: 'HK Grotesk';
   font-weight: 400;
   position: absolute;
   top: 475px;
   left: 50px;
   opacity: .8;
-  }
+}
 
-.container .front > div {
+.container .front>div {
   border-radius: 0 3px 3px 0;
-  box-shadow: 
+  box-shadow:
     inset 4px 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -146,7 +148,7 @@ box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
   left: 10px;
   bottom: 0;
   width: 3px;
-  background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -167,7 +169,7 @@ box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
 }
 
 .cover {
- background: linear-gradient(45deg,  #DAD5DC 0%, #f2ebf4 100%);
+  background: linear-gradient(45deg, #DAD5DC 0%, #f2ebf4 100%);
 }
 
 
@@ -177,11 +179,11 @@ box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
   padding-right: 20px;
 }
 
-.left-side h2 span:last-child{
+.left-side h2 span:last-child {
   font-family: 'HK Grotesk';
-} 
+}
 
-.leftpage{
+.leftpage {
   position: relative;
   display: block;
   width: 400px;
@@ -189,24 +191,24 @@ box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
   border-radius: 2px 4px 4px 2px;
   background: linear-gradient(to right, white, white, white, white, white, white, white, rgb(211, 200, 200));
   font-family: 'HK Grotesk';
-  -webkit-box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
--moz-box-shadow: 13px 13px 8px 0px rgba(128, 92, 143, 0.6);
-box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
+  -webkit-box-shadow: 13px 13px 8px 0px rgba(151, 146, 153, 0.6);
+  -moz-box-shadow: 13px 13px 8px 0px rgba(128, 92, 143, 0.6);
+  box-shadow: 13px 13px 8px 0px rgba(151, 146, 153, 0.6);
   font-weight: 400;
   color: #2b2b2b;
 }
 
-.rightpage{
+.rightpage {
   position: relative;
   display: block;
   width: 400px;
   height: 550px;
   border-radius: 2px 4px 4px 2px;
-  background: linear-gradient(to left,  white,white, white, white, white, white, white, rgb(211, 200, 200));
+  background: linear-gradient(to left, white, white, white, white, white, white, white, rgb(211, 200, 200));
   font-family: 'HK Grotsek';
-  -webkit-box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
--moz-box-shadow: 13px 13px 8px 0px rgba(128, 92, 143, 0.6);
-box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
+  -webkit-box-shadow: 13px 13px 8px 0px rgba(151, 146, 153, 0.6);
+  -moz-box-shadow: 13px 13px 8px 0px rgba(128, 92, 143, 0.6);
+  box-shadow: 13px 13px 8px 0px rgba(151, 146, 153, 0.6);
   font-weight: 400;
   color: #2b2b2b;
 }

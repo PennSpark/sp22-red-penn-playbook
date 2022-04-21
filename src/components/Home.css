@@ -22,8 +22,23 @@ html, body{
   height: 100vh;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 10%;
+  padding-top: 6vh;
   background-color: #3d3339
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 8vh;
+  }
+
+  .wholebook {
+    position: absolute;
+    left: -100vw;
+  }
+
+  .container .book {
+    width: 40vw;
+  }
 }
 
 .wholebook {

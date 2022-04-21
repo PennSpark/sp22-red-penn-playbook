@@ -4,7 +4,6 @@ body {
     overflow: scroll;
 }
 
-
 .home-about_container {
     width: 51em; 
     text-align: center;
@@ -20,4 +19,22 @@ body {
     opacity: 0.95; 
     right: 390px;
     top: 190px;
+}
+
+@media (max-width: 768px) {
+    .home-about_container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .home-active {
+        position: absolute;
+        width: 45px;
+        height: 30px;
+        background-color: #ead2dd;
+        opacity: 1;
+        right: calc(20vw + 180px);
+        top: 119px;
+    }
 }

@@ -62,8 +62,8 @@
         width: 45px;
         height: 30px;
         background-color: #FFDB78;
-        opacity: 0.95;
+        opacity: 1;
         right: calc(8vw + 45px);
-        top: 120px;
+        top: 119px;
     }
 }

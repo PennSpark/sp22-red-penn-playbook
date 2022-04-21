@@ -17,3 +17,21 @@
     right: 300px;
     top: 190px;
 }
+
+@media (max-width: 768px) {
+    .cx-about_container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cx-active {
+        position: absolute;
+        width: 45px;
+        height: 30px;
+        background-color: #577ed2;
+        opacity: 1;
+        right: calc(16vw + 135px);
+        top: 119px;
+    }
+}

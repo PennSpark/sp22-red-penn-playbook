@@ -18,3 +18,21 @@
     right: 210px;
     top: 190px;
 }
+
+@media (max-width: 768px) {
+    .pw-about_container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .pw-active {
+        position: absolute;
+        width: 45px;
+        height: 30px;
+        background-color: #54706b;
+        opacity: 1;
+        right: calc(12vw + 90px);
+        top: 119px;
+    }
+}

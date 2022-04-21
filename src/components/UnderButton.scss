@@ -41,6 +41,7 @@ h1, h2, h3, h4, p {
 input {
   border: 1px solid $gold;
   margin-bottom: 10px;
+  width: 190px;
 }
 
 .log-in {
@@ -75,8 +76,13 @@ input {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .login {
+    height: 23em;
+  }
+}
+
 .login-inputs {
-  padding-left: 1em;
   text-align: center;
 
 }
@@ -106,6 +112,33 @@ input {
     width: 55vw;
     font-weight: 600;
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    margin-top: 0;
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      width: 80vw;
+    }
+
+    h3 {
+      font-weight: 200;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  
+    h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
   }
 }
 

@@ -17,6 +17,23 @@ nav {
     margin-right: 30px;
 }
 
+@media (max-width: 768px) {
+    nav {
+        margin-top: 20px;
+    }
+    
+    .navlink-title {
+        height: 100px;
+        width: 45px;
+        color: white;
+        text-decoration: none;
+        padding: 5px 0px;
+        position: relative;
+        writing-mode: vertical-rl;
+        margin-right: 4vw;
+    }
+}
+
 
 #penn-playbook {
     background-color: #ead2dd;

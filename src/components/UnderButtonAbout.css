@@ -2,7 +2,7 @@
 
 
 .utb-about_container {
-    width: 35em; 
+    width: 35em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -30,23 +30,39 @@
     text-align: center;
     color: #2D2D2D;
 }
+
 .utb-active {
     position: absolute;
     width: 60px;
     height: 80px;
     background-color: #FFDB78;
-    opacity: 0.95; 
+    opacity: 0.95;
     right: 120px;
     top: 190px;
 }
 
 @media (max-width: 768px) {
+    .utb-about_container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .utb-p {
+        font-family: 'HK Grotesk';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #2D2D2D;
+    }
+
     .utb-active {
         position: absolute;
         width: 45px;
-        height: 50px;
+        height: 30px;
         background-color: #FFDB78;
-        opacity: 0.95; 
+        opacity: 0.95;
         right: calc(8vw + 45px);
         top: 120px;
     }

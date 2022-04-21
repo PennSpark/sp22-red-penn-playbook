@@ -28,6 +28,13 @@
     color: #2D2D2D;
 }
 
+@media (max-width: 768px) {
+    .about-h1 {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+}
+
 .pit-active {
     position: absolute;
     width: 60px;

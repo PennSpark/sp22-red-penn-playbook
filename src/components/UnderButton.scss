@@ -23,6 +23,11 @@ html, body {
 
 h1, h2, h3, h4, p {
   color: $dark;
+  font-family: "HK Grotesk";
+}
+
+h1 {
+
 }
 
 .penn-email {
@@ -92,8 +97,8 @@ input {
 
   h3 {
     font-weight: 200;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   h2 {
@@ -101,7 +106,7 @@ input {
     margin-right: auto;
     width: 55vw;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-top: 0px;
   }
 }
 
@@ -133,7 +138,7 @@ input {
 }
 
 .button-container {
-  height: 300px;
+  height: 250px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;

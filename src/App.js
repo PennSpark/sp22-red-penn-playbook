@@ -13,7 +13,7 @@ import UnderButton from './components/UnderButton';
 import UnderButtonAbout from './components/UnderButtonAbout';
 import PenninTouchAbout from './components/PennInTouchAbout';
 import ClassXAbout from './components/ClassXAbout';
-import PennWrapped from './components/PennWrapped';
+import PennWrapped from './components/penn-wrapped/PennWrapped';
 import PennWrappedAbout from './components/PennWrappedAbout';
 import HomeAbout from './components/HomeAbout';
 import MainLayout from './components/MainLayout';
@@ -35,7 +35,7 @@ export function App() {
             <Route index element={<UnderButton />} />
           </Route>
           <Route path='/penn-wrapped'>
-            <Route index element={<PennWrapped />} />
+            <Route path='1' element={<PennWrapped />} />
           </Route>
           <Route path='/about'>
             <Route path='under-the-button' element={

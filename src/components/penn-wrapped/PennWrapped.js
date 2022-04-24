@@ -43,7 +43,7 @@ const PennWrapped = () => {
                     </div>
                     <div class="trait-container">
                         <h2>56%</h2>
-                        <p>Introverted (I)</p>
+                        <p>Feeling (F)</p>
                     </div>
                 </div>
                 <div class="trait-pair-container">
@@ -59,6 +59,7 @@ const PennWrapped = () => {
                         <p>Prospecting (P)</p>
                     </div>
                 </div>
+                <a href='../../penn-wrapped/2'>View</a>
             </div>
         </div>
     );

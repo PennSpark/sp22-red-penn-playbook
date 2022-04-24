@@ -17,18 +17,8 @@ $small: 40em;
 }
   
 html, body {
-  height: 100%;
+  eight: 100%;
   background-color: $yellow;
-}
-
-html {
-  background: $yellow;
-}
-
-body {
-  min-height: 100%;
-  overflow: hidden;
-
 }
 
 h1, h2, h3, h4, p {
@@ -54,7 +44,7 @@ input {
 .utb-description {
   height: 15em;
   width: 20em;
-  margin-top: 2em;
+  padding-top: 2em;
   margin-left: auto;
   margin-right: auto;
   text-align: center;

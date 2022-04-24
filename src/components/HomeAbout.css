@@ -29,12 +29,11 @@ body {
     }
 
     .home-active {
-        position: absolute;
         width: 45px;
         height: 30px;
         background-color: #ead2dd;
         opacity: 1;
-        right: calc(20vw + 180px);
-        top: 119px;
+        margin-right: 255px;
+        margin-top: -41px;
     }
 }

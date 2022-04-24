@@ -8,15 +8,14 @@
     margin-right: auto;
 }
 
-
 .pw-active {
-    position: absolute;
     width: 60px;
     height: 80px;
     background-color: #54706b;
     opacity: 0.95;
-    right: 225px;
-    top: 190px;
+    float: right;
+    margin-right: 210px;
+    margin-top: -80px;
 }
 
 @media (max-width: 768px) {
@@ -27,12 +26,11 @@
     }
 
     .pw-active {
-        position: absolute;
         width: 45px;
         height: 30px;
         background-color: #54706b;
         opacity: 1;
-        right: calc(12vw + 90px);
-        top: 119px;
+        margin-right: 135px;
+        margin-top: -41px;
     }
 }

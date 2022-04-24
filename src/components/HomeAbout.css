@@ -11,6 +11,10 @@ body {
     margin-right: auto;
 }
 
+.home-container {
+    background-color: #ebebeb;
+}
+
 .home-active {
     width: 60px;
     height: 80px;

@@ -10,7 +10,7 @@ const cookieParser = require("cookie-parser");
 const session = require('express-session')
 
 require('dotenv').config()
-const MONGO_URI = process.env.MONGODB_URI || `mongodb+srv://superuser:Spork2022@cluster0.tbmhn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+const MONGO_URI = process.env.MONGODB_URI || `mongodb+srv://${process.env.USER}:${process.env.PASS}@cluster0.tbmhn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
 
 mongoose.connect(MONGO_URI, {
@@ -33,7 +33,7 @@ app.use(express.static('dist'))
 app.use(
 	session({
 		secret: "LightBlog",
-		cookie: { maxAge: 60000, httpOnly: false },
+		cookie: { maxAge: 24 * 60 * 60 * 1000, httpOnly: false },
 		resave: false,
 		saveUninitialized: false
 	})

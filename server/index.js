@@ -33,7 +33,7 @@ app.use(express.static('dist'))
 app.use(
 	session({
 		secret: "LightBlog",
-		cookie: { maxAge: 60000, httpOnly: false },
+		cookie: { maxAge: 864000000, httpOnly: false },
 		resave: false,
 		saveUninitialized: false
 	})

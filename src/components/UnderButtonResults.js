@@ -10,6 +10,7 @@ const UnderButtonResults = () => {
   const [min, setMin] = useState(0)
   const [answers, setAnswers] = useState([])
   const rndInt = Math.floor(Math.random() * 3) + 1
+  const navigate = useNavigate();
   useEffect(() => {
     const getResults = async () => {
         try {
@@ -35,8 +36,16 @@ const UnderButtonResults = () => {
 
     getResults()
 }, [min])
+const about = () => {
+  navigate(`../../about/under-the-button`);
+}
   return (
+    <div>
+      
     <div class="peepeepoopoo">
+      <div class="about-container">
+        <button type="button" className="utb-about" onClick={() => about()}>About</button>
+      </div>
         <h1 className="results-h1">By the Button</h1>
         { rndInt === 1 && answers[3] == "milk first" && <h2 className="results-h2">You are a {typeOfStudent} Penn student who prefers crispy cereal and would rather have a {answers[7]} in your life</h2>}
         { rndInt === 1 && answers[3] == "cereal first" && <h2 className="results-h2">You are a {typeOfStudent} Penn student who prefers soggy cereal and would rather have a {answers[7]} in your life</h2>}
@@ -47,6 +56,7 @@ const UnderButtonResults = () => {
         { rndInt === 3 && answers[14] == "oversleep every day for a week" && <h2 className="results-h2">You are a {typeOfStudent} Penn student who probably shows up late to every class from oversleeping </h2> }
         { rndInt === 3 && answers[14] == "no sleep for 4 days" && <h2 className="results-h2">You are a {typeOfStudent} Penn student who probably pulls way too many all-nighters </h2> }
         <h3 className="results-h3">You chose the minority answer in {min}/15 of the questions</h3>
+    </div>
     </div>
   )
 }

@@ -71,6 +71,9 @@ const UnderButtonQuestion = (qid) => {
         for (var i = 0; i < ele.length; i++)
             ele[i].checked = false;
     }
+    const about = () => {
+        navigate(`../../about/under-the-button`);
+    }
     return (
         <>
             {/* <Link to={`../`}>
@@ -78,6 +81,9 @@ const UnderButtonQuestion = (qid) => {
                     About
                 </button></Link> */}
             <div class="text-container">
+                <div class="about-container">
+                    <button type="button" className="utb-about" onClick={() => about()}>About</button>
+                </div>
                 <h1>By the Button</h1>
                 <h4>Q : {qId}/15</h4>
                 {console.log(question)}

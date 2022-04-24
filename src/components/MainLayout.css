@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     background-color: #ebebeb;
-    height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -13,6 +12,16 @@
 
 .main-layout__main-content{
     width: 100%;
-    height: 100%;
+    margin-bottom: 20px;
+    min-height: calc(100vh - 225px);
     background-color: #ebebeb;
+}
+
+@media (max-width: 768px) {
+    .main-layout__main-content{
+        width: 100%;
+        margin-bottom: 20px;
+        min-height: calc(100vh - 140px);
+        background-color: #ebebeb;
+    }
 }

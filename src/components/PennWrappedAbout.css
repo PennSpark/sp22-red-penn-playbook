@@ -2,7 +2,7 @@
 
 
 .pw-about_container {
-    width: 51em;
+    width: 80vw;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -11,12 +11,12 @@
 
 .pw-active {
     position: absolute;
-    width: 60px;
-    height: 80px;
+    width: 45px;
+    height: 30px;
     background-color: #54706b;
-    opacity: 0.95;
-    right: 225px;
-    top: 190px;
+    opacity: 1;
+    right: calc(12vw + 90px);
+    top: 119px;
 }
 
 @media (max-width: 768px) {

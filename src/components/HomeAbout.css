@@ -5,20 +5,20 @@ body {
 }
 
 .home-about_container {
-    width: 51em;
-    text-align: center;
+    width: 60vw;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .home-active {
     position: absolute;
-    width: 60px;
-    height: 80px;
+    width: 45px;
+    height: 30px;
     background-color: #ead2dd;
-    opacity: 0.95;
-    right: 405px;
-    top: 190px;
+    opacity: 1;
+    right: calc(20vw + 180px);
+    top: 119px;
 }
 
 @media (max-width: 768px) {
@@ -32,9 +32,9 @@ body {
         position: absolute;
         width: 45px;
         height: 30px;
-        background-color: #ead2dd;
+        background-color: #54706b;
         opacity: 1;
-        right: calc(20vw + 180px);
+        right: calc(12vw + 90px);
         top: 119px;
     }
 }

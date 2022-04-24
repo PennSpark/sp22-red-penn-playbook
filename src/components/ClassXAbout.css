@@ -2,7 +2,7 @@
 
 
 .cx-about_container {
-    width: 51em;
+    width: 80vw;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -10,12 +10,12 @@
 
 .cx-active {
     position: absolute;
-    width: 60px;
-    height: 80px;
+    width: 45px;
+    height: 30px;
     background-color: #577ed2;
-    opacity: 0.95;
-    right: 315px;
-    top: 190px;
+    opacity: 1;
+    right: calc(16vw + 135px);
+    top: 119px;
 }
 
 @media (max-width: 768px) {

@@ -2,7 +2,7 @@
 
 
 .pit-about_container {
-    width: 51em;
+    width: 60vw;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -30,12 +30,12 @@
 
 .pit-active {
     position: absolute;
-    width: 60px;
-    height: 80px;
+    width: 45px;
+    height: 30px;
     background-color: #cf6c5d;
-    opacity: 0.95;
-    right: 45px;
-    top: 190px;
+    opacity: 1;
+    right: calc(4vw);
+    top: 119px;
 }
 
 
@@ -54,15 +54,5 @@
     .about-p {
         font-weight: 400;
         font-size: 16px;
-    }
-
-    .pit-active {
-        position: absolute;
-        width: 45px;
-        height: 30px;
-        background-color: #cf6c5d;
-        opacity: 1;
-        right: calc(4vw);
-        top: 119px;
     }
 }

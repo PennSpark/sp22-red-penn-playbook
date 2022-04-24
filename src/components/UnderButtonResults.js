@@ -36,7 +36,7 @@ const UnderButtonResults = () => {
     getResults()
 }, [min])
   return (
-    <div>
+    <div class="peepeepoopoo">
         <h1 className="results-h1">By the Button</h1>
         { rndInt === 1 && answers[3] == "milk first" && <h2 className="results-h2">You are a {typeOfStudent} Penn student who prefers crispy cereal and would rather have a {answers[7]} in your life</h2>}
         { rndInt === 1 && answers[3] == "cereal first" && <h2 className="results-h2">You are a {typeOfStudent} Penn student who prefers soggy cereal and would rather have a {answers[7]} in your life</h2>}

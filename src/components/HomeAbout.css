@@ -12,13 +12,13 @@ body {
 }
 
 .home-active {
-    position: absolute;
     width: 60px;
     height: 80px;
     background-color: #ead2dd;
     opacity: 0.95;
-    right: 405px;
-    top: 190px;
+    float: right;
+    margin-right: 390px;
+    margin-top: -80px;
 }
 
 @media (max-width: 768px) {

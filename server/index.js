@@ -25,7 +25,7 @@ const app = express()
 //     maxAge: 24 * 60 * 60 * 1000, // 24 hours
 //   }))
 app.use(cookieParser());
-const apiPort = 4000
+const apiPort = process.env.PORT || 4000
 app.set('trust proxy', 1) // trust first proxy
 
 app.use(express.json())

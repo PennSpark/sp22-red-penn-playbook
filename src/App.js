@@ -17,6 +17,7 @@ import PennWrapped from './components/penn-wrapped/PennWrapped';
 import PennWrappedAbout from './components/PennWrappedAbout';
 import HomeAbout from './components/HomeAbout';
 import MainLayout from './components/MainLayout';
+import PennInTouchTEST from './components/PennInTouchTest';
 
 export function App() {
   return (
@@ -29,6 +30,8 @@ export function App() {
             <Route index element={<Navigate replace to='home' />} />
             <Route path='home' element={<Home />} />
             <Route path='penn-in-touch' element={<Canvas />} />
+            <Route path='penn-in-touch-test' element={<PennInTouchTEST />} />
+
           </Route>
           <Route path='/under-the-button'>
             <Route path=":qId" element={<UnderButton />} />

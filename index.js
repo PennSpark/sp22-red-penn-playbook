@@ -49,9 +49,9 @@ app.get("/", (req, res) => {
 });
 
 // set favicon
-app.get("/favicon.ico", (req, res) => {
-  res.status(404).send();
-});
+// app.get("/favicon.ico", (req, res) => {
+//   res.status(404).send();
+// });
 
 // set the initial entry point
 // app.get("*", (req, res) => {

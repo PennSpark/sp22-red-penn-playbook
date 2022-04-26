@@ -9,14 +9,17 @@ const cookieParser = require("cookie-parser");
 const session = require("express-session");
 
 require("dotenv").config();
-const MONGO_URI =
-  process.env.MONGODB_URI ||
-  `mongodb+srv://superuser:Spork2022@cluster0.tbmhn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const MONGO_URI = process.env.MONGODB_URI;
 
-mongoose.connect(MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose
+  .connect(MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("MongoDB has been connected"))
+  .catch((err) => console.log(err));
+
+mongoose.Promise = require("bluebird");
 
 const app = express();
 // app.use(cookieSession({
@@ -29,7 +32,7 @@ const apiPort = 4000;
 app.set("trust proxy", 1); // trust first proxy
 
 app.use(express.json());
-app.use(express.static("dist"));
+// app.use(express.static("dist"));
 app.use(
   session({
     secret: "LightBlog",
@@ -49,9 +52,9 @@ app.use("/api", ApiRouter);
 // });
 
 // set favicon
-// app.get("/favicon.ico", (req, res) => {
-//   res.status(404).send();
-// });
+app.get("/favicon.ico", (req, res) => {
+  res.status(404).send();
+});
 
 // set the initial entry point
 // app.get("*", (req, res) => {

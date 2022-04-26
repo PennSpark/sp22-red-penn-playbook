@@ -44,9 +44,9 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "client", "build")));
 
 app.use("/api", ApiRouter);
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hello World!");
+// });
 
 // set favicon
 // app.get("/favicon.ico", (req, res) => {

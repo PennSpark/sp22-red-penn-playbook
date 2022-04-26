@@ -44,7 +44,7 @@ app.use(
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "client", "build")));
+// app.use(express.static(path.join(__dirname, "client", "build")));
 
 app.use("/api", ApiRouter);
 // app.get("/", (req, res) => {
@@ -67,10 +67,13 @@ app.get("/favicon.ico", (req, res) => {
 //     res.status(500).send({ Error: err.stack })
 //   })
 
+app.use(express.static(path.join(__dirname, "client", "build")));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 });
 
 app.listen(process.env.PORT || apiPort, () =>
   console.log(`Server running on port ${process.env.PORT || apiPort}`)
 );
+
+// app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`));

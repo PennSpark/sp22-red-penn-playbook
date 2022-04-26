@@ -17,7 +17,7 @@
     "morgan": "^1.9.0"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "npm install && node index.js",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "engines": {

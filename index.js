@@ -71,4 +71,6 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
-app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`));
+app.listen(process.env.PORT || apiPort, () =>
+  console.log(`Server running on port ${process.env.PORT || apiPort}`)
+);

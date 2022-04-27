@@ -18,6 +18,9 @@ import PennWrappedAbout from "./components/PennWrappedAbout";
 import HomeAbout from "./components/HomeAbout";
 import MainLayout from "./components/MainLayout";
 import PennInTouchTEST from "./components/PennInTouchTest";
+import ClassXTest from "./components/ClassXTest";
+import { Parallax, ParallaxProvider} from 'react-scroll-parallax'
+
 
 export function App() {
   return (
@@ -29,6 +32,8 @@ export function App() {
             <Route path="home" element={<Navigate replace to="/" />} />
             <Route path="penn-in-touch" element={<Canvas />} />
             <Route path="penn-in-touch-test" element={<PennInTouchTEST />} />
+            <Route path="class-x-test" element={<ClassXTest />} />
+
           </Route>
           <Route path="/under-the-button">
             <Route path=":qId" element={<UnderButton />} />
@@ -80,7 +85,7 @@ export function App() {
             />
           </Route>
         </Routes>
-      </BrowserRouter>
+              </BrowserRouter>
     </ErrorBoundary>
   );
 }

@@ -16,6 +16,7 @@ import ClassXAbout from "./components/ClassXAbout";
 import PennWrappedAbout from "./components/PennWrappedAbout";
 // penn wrapped pages
 import PennWrapped from "./components/penn-wrapped/PennWrapped";
+import FratParties from "./components/penn-wrapped/FratParties";
 import CloseFriends from "./components/penn-wrapped/CloseFriends";
 import LookingBack from "./components/penn-wrapped/LookingBack";
 import HomeAbout from "./components/HomeAbout";
@@ -39,6 +40,7 @@ export function App() {
           </Route>
           <Route path="/penn-wrapped">
             <Route path="1" element={<PennWrapped />} />
+            <Route path="2" element={<FratParties />} />
             <Route path="3" element={<CloseFriends />} />
             <Route path="11" element={<LookingBack />} />
           </Route>

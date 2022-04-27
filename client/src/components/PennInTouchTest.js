@@ -1,37 +1,20 @@
 import React, { useRef, useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { pennintouchActions } from '../redux/pennintouch-data';
 import Draggable from 'react-draggable';
 
 
 
 function PennInTouchTEST() {
-
-    const [data, setData] = useState([{
-        id: 1,
-        text: 'Temporary test text',
-        xpos: 0,
-        ypos: 0,
-        isEditing: false
-    },
-    {
-        id: 2,
-        text: 'Temporary test text 2',
-        xpos: 50,
-        ypos: 50,
-        isEditing: true
-    },
-    {
-        id: 3,
-        text: 'Temporary test text 3',
-        xpos: 150,
-        ypos: 150,
-        isEditing: true
-    }]);
+    const data = useSelector((state) => state.pennintouchData.data);
 
     const [active, setActive] = useState({ active: false, x: 0, y: 0 })
 
     const [areaText, setAreaText] = useState("")
 
     const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const dispatch = useDispatch();
 
 
     function createText(e) {
@@ -55,7 +38,7 @@ function PennInTouchTEST() {
             ypos: active.y,
             isEditing: false,
         }
-        setData([...data, newText])
+        dispatch(pennintouchActions.addTextHandler(newText));
         setActive({ active: false })
         setAreaText("")
     }

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f2cc0b51.css",
-    "main.js": "/static/js/main.a804c9a6.js",
+    "main.css": "/static/css/main.f2096ca4.css",
+    "main.js": "/static/js/main.1f3de705.js",
     "static/media/spark.png": "/static/media/spark.2fb895f69cd99f00cdd4.png",
     "static/media/button-outline.svg": "/static/media/button-outline.18d5506d210f969494f64f2a9e5725de.svg",
     "static/media/button.svg": "/static/media/button.bb4818e6653cfcaadcc0ac7018a8ab5e.svg",
@@ -14,11 +14,11 @@
     "static/media/buttonGreen.svg": "/static/media/buttonGreen.a7197f9bd869ee2efe65dabd6dff0efa.svg",
     "static/media/buttonRed.svg": "/static/media/buttonRed.f25641836927779c652af23e78695bcf.svg",
     "static/media/rightArrow.svg": "/static/media/rightArrow.1c77fee97c5155ee681a718ef17a8906.svg",
-    "main.f2cc0b51.css.map": "/static/css/main.f2cc0b51.css.map",
-    "main.a804c9a6.js.map": "/static/js/main.a804c9a6.js.map"
+    "main.f2096ca4.css.map": "/static/css/main.f2096ca4.css.map",
+    "main.1f3de705.js.map": "/static/js/main.1f3de705.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2cc0b51.css",
-    "static/js/main.a804c9a6.js"
+    "static/css/main.f2096ca4.css",
+    "static/js/main.1f3de705.js"
   ]
 }

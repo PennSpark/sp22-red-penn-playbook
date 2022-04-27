@@ -37,13 +37,11 @@ function PennInTouchTEST() {
     function createText(e) {
         if (!active.active) {
             setActive({ active: true, x: e.clientX, y: e.clientY })
-            console.log(e)
         }
     }
 
     function handleDrag(e) {
         if (!isSubmitting) {
-            console.log(e)
             setActive({ active: true, x: e.x-e.offsetX, y: e.y-e.offsetY })
         }
     }
@@ -62,6 +60,7 @@ function PennInTouchTEST() {
 
     function handleTextChange(e) {
         setAreaText(String(e.target.value))
+        
     }
 
     function activeText() {
@@ -71,7 +70,7 @@ function PennInTouchTEST() {
                     <div>
                         <textarea value={areaText} onInput={(e) => handleTextChange(e)} style={{ color: "black", zIndex: '2' }}>
                         </textarea>
-                        <button onClick={saveText} onMouseDown={() => setIsSubmitting(true)} onMouseUp={() => setIsSubmitting(false)}>hi</button>
+                        <button onClick={saveText} onMouseDown={() => setIsSubmitting(true)} onMouseUp={() => setIsSubmitting(false)}>place</button>
                     </div>
                 </Draggable>
             )
@@ -84,7 +83,7 @@ function PennInTouchTEST() {
             <div style={{ height: '100vh', width: '100vw', position: 'absolute', zIndex: '1' }} onClick={(e) => createText(e)}>
                 {data.map(function (text) {
                     return (
-                        <div style={{ color: "black", position: 'absolute', left: text.xpos, top: text.ypos }}>
+                        <div style={{ color: "black", position: 'absolute', left: text.xpos, top: text.ypos, whiteSpace: 'pre-wrap'}}>
                             {text.text}
                         </div>
                     )

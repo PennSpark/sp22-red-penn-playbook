@@ -13,8 +13,9 @@ import UnderButton from "./components/UnderButton";
 import UnderButtonAbout from "./components/UnderButtonAbout";
 import PenninTouchAbout from "./components/PennInTouchAbout";
 import ClassXAbout from "./components/ClassXAbout";
-import PennWrapped from "./components/penn-wrapped/PennWrapped";
 import PennWrappedAbout from "./components/PennWrappedAbout";
+import PennWrapped from "./components/penn-wrapped/PennWrapped";
+import LookingBack from "./components/penn-wrapped/LookingBack";
 import HomeAbout from "./components/HomeAbout";
 import MainLayout from "./components/MainLayout";
 import PennInTouchTEST from "./components/PennInTouchTest";
@@ -36,6 +37,7 @@ export function App() {
           </Route>
           <Route path="/penn-wrapped">
             <Route path="1" element={<PennWrapped />} />
+            <Route path="11" element={<LookingBack />} />
           </Route>
           <Route path="/about">
             <Route

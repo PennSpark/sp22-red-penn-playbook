@@ -1,5 +1,9 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
 
+.utb-container {
+    background-color: #ebebeb;
+}
+
 .utb-about_container {
     width: 35em;
     text-align: center;

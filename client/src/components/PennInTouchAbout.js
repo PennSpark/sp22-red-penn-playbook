@@ -4,7 +4,7 @@ import './PennInTouchAbout.css';
 
 const PenninTouchAbout = () => {
     return (
-        <div>
+        <div className = "pit-container">
             <div className="pit-active" />
             <div className="pit-about_container">
                 <h1 className="about-h1">Penn in Touch</h1>

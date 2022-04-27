@@ -4,7 +4,7 @@ import './ClassXAbout.css';
 
 const ClassXAbout = () => {
     return (
-        <div>
+        <div className="cs-container">
             <div className="cx-active" />
             <div className="cx-about_container">
                 <h1 className="about-h1">Class X</h1>

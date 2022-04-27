@@ -5,7 +5,7 @@ import { ReactComponent as LoginButton } from './svg/button-outline.svg';
 
 const UnderButtonAbout = () => {
     return (
-        <div>
+        <div className="utb-container">
             <div className="utb-active" />
             <div className="utb-about_container">
                 <h1 className="about-h1">By the Button</h1>

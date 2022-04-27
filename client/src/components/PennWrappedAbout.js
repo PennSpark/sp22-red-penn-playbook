@@ -5,7 +5,7 @@ import { ReactComponent as RightArrow } from './svg/rightArrow.svg';
 
 const PennWrappedAbout = () => {
     return (
-        <div>
+        <div className="pw-about">
             <div className="pw-active" />
             <div className="pw-about_container">
                 <div class="year-container">

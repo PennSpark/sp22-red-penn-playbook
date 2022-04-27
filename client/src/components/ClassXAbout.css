@@ -1,6 +1,11 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
 
 
+
+.cx-container {
+    background-color: #ebebeb;
+}
+
 .cx-about_container {
     width: 51em;
     text-align: center;

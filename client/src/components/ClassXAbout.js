@@ -29,12 +29,8 @@ const ClassXAbout = () => {
   }
 
     return (
-<<<<<<< HEAD:src/components/ClassXAbout.js
         <>
         <div>
-=======
-        <div className="cs-container">
->>>>>>> c9fa17d9d959f13acf4246d9292f02014ce9c638:client/src/components/ClassXAbout.js
             <div className="cx-active" />
             <div className="cx-about_container">
                 <h1 className="about-h1">Class X</h1>

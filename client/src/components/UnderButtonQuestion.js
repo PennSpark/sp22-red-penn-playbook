@@ -2,7 +2,14 @@ import React, { useContext, useState, useEffect } from 'react'
 import { useNavigate, useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
 import './UnderButton.scss';
-import buttonSvg from './svg/button.svg'
+import buttonGreenDown from './svg/buttonGreenDown.svg'
+import buttonRedDown from './svg/buttonRedDown.svg'
+import buttonYellowDown from './svg/buttonYellowDown.svg'
+import buttonDown from './svg/buttonDown.svg'
+import button from './svg/button.svg'
+import buttonRed from './svg/buttonRed.svg'
+import buttonYellow from './svg/buttonYellow.svg'
+import buttonGreen from './svg/buttonGreen.svg'
 import axios from 'axios';
 const UnderButtonQuestion = (qid) => {
     let { qId } = useParams()
@@ -76,6 +83,16 @@ const UnderButtonQuestion = (qid) => {
     }
     return (
         <>
+            <div class="render-everything">
+                <img src = {buttonDown}></img>
+                <img src = {buttonRedDown}></img>
+                <img src = {buttonGreenDown}></img>
+                <img src = {buttonYellowDown}></img>
+                <img src = {button}></img>
+                <img src = {buttonRed}></img>
+                <img src = {buttonGreen}></img>
+                <img src = {buttonYellow}></img>
+            </div>
             {/* <Link to={`../`}>
                 <button type="button">
                     About

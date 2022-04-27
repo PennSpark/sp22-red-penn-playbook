@@ -1,5 +1,33 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
 
+@keyframes slidein {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: 51%;
+    }
+  }
+  @keyframes slidein1 {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: 76%;
+    }
+  }
+  @keyframes slidein2 {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: 56%;
+    }
+  }
+
 .pw-container {
     width: 51em;
     text-align: center;
@@ -25,8 +53,11 @@
     height: 12px;
     border-radius: 0px 10px 10px 0px;
     float: right;
-    width: 51%;
     background-color: #4396b4;
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
 }
 
 .bar-filler-2 {
@@ -34,6 +65,9 @@
     border-radius: 10px 0px 0px 10px;
     width: 76%;
     background-color: #e4ae3a;
+    animation-name: slidein1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .bar-filler-3 {
@@ -42,6 +76,9 @@
     float: right;
     width: 56%;
     background-color: #32a574;
+    animation-name: slidein2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .bar-filler-4 {
@@ -49,4 +86,7 @@
     border-radius: 10px 0px 0px 10px;
     width: 56%;
     background-color: #886299;
+    animation-name: slidein2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }

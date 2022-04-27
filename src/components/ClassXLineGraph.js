@@ -145,14 +145,15 @@ const data = [
 export default class ClassXLineGraph extends PureComponent {
   render() {
     return (
-      <ResponsiveContainer width={'75%'} height={300}>
+      <ResponsiveContainer width={'100%'} height={300}>
         <LineChart
+          
           width={500}
           height={300}
           data={data}
           margin={{
             top: 5,
-            right: 30,
+            right: 50,
             left: 20,
             bottom: 5,
           }}

@@ -1,6 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
 
-
 .utb-about_container {
     width: 35em;
     text-align: center;
@@ -32,13 +31,13 @@
 }
 
 .utb-active {
-    position: absolute;
     width: 60px;
     height: 80px;
     background-color: #FFDB78;
     opacity: 0.95;
-    right: 120px;
-    top: 190px;
+    float: right;
+    margin-right: 120px;
+    margin-top: -80px;
 }
 
 @media (max-width: 768px) {
@@ -58,12 +57,11 @@
     }
 
     .utb-active {
-        position: absolute;
         width: 45px;
         height: 30px;
         background-color: #FFDB78;
         opacity: 1;
-        right: calc(8vw + 45px);
-        top: 119px;
+        margin-right: 75px;
+        margin-top: -41px;
     }
 }

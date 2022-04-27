@@ -13,11 +13,13 @@ import UnderButton from './components/UnderButton';
 import UnderButtonAbout from './components/UnderButtonAbout';
 import PenninTouchAbout from './components/PennInTouchAbout';
 import ClassXAbout from './components/ClassXAbout';
+import PennWrapped from './components/penn-wrapped/PennWrapped';
 import PennWrappedAbout from './components/PennWrappedAbout';
 import HomeAbout from './components/HomeAbout';
 import MainLayout from './components/MainLayout';
 import ClassXVisual from './components/ClassXVisual';
 import ClassXGallery from './components/ClassXGallery';
+import PennInTouchTEST from './components/PennInTouchTest';
 
 export function App() {
   return (
@@ -32,10 +34,15 @@ export function App() {
             <Route path='penn-in-touch' element={<Canvas />} />
             <Route path='class-x-visual' element={<ClassXVisual/>}/>
             <Route path='class-x-gallery' element={<ClassXGallery/>}/>
+            <Route path='penn-in-touch-test' element={<PennInTouchTEST />} />
+
           </Route>
           <Route path='/under-the-button'>
             <Route path=":qId" element={<UnderButton />} />
             <Route index element={<UnderButton />} />
+          </Route>
+          <Route path='/penn-wrapped'>
+            <Route path='1' element={<PennWrapped />} />
           </Route>
           <Route path='/about'>
             <Route path='under-the-button' element={

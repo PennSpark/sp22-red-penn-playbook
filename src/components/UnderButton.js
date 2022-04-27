@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { useParams, Link } from "react-router-dom"
+import { useNavigate, useParams, Link } from "react-router-dom"
 import UnderButtonQuestion from './UnderButtonQuestion';
 import UnderButtonResults from './UnderButtonResults';
 import './UnderButton.scss';
@@ -9,6 +9,7 @@ import { ReactComponent as LoginButton } from './svg/button-outline.svg';
 const UnderButton = () => {
     let { qId } = useParams()
     const [email, setEmail] = useState('')
+    const navigate = useNavigate()
     const signUp = async () => {
         try {
             await axios.post('/api/signup', { email: email })
@@ -17,8 +18,14 @@ const UnderButton = () => {
             alert('An error occured. Please try again.')
         }
     }
+    const about = () => {
+        navigate(`../../about/under-the-button`);
+    }
     return (
         <>
+            {!qId && <div className="login-about-container">
+            {!qId && <button type="button" className="utb-about" onClick={() => about()}>About</button>}
+            </div>}
             {!qId && <div class="utb-description">
                 {!qId && <h1>By the Button</h1>}
                 {!qId && <p>Not a Penn student? Unfortunately, this quiz is reserved for Penn students but please check out the other installations in Penn Playbook!</p>}

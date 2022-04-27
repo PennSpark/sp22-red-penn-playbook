@@ -29,13 +29,13 @@
 }
 
 .pit-active {
-    position: absolute;
     width: 60px;
     height: 80px;
     background-color: #cf6c5d;
     opacity: 0.95;
-    right: 30px;
-    top: 190px;
+    float: right;
+    margin-right: 30px;
+    margin-top: -80px;
 }
 
 
@@ -57,12 +57,11 @@
     }
 
     .pit-active {
-        position: absolute;
         width: 45px;
         height: 30px;
         background-color: #cf6c5d;
         opacity: 1;
-        right: calc(4vw);
-        top: 119px;
+        margin-right: 15px;
+        margin-top: -41px;
     }
 }

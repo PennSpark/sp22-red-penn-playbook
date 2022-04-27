@@ -21,18 +21,9 @@ html, body {
   background-color: $yellow;
 }
 
-html {
-  background: $yellow;
-}
-
-body {
-  min-height: 100%;
-  overflow: hidden;
-
-}
-
 h1, h2, h3, h4, p {
   color: $dark;
+  font-family: "HK Grotesk";
 }
 
 .penn-email {
@@ -54,7 +45,7 @@ input {
 .utb-description {
   height: 15em;
   width: 20em;
-  margin-top: 10em;
+  padding-top: 2em;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -93,6 +84,10 @@ input {
   border-radius: 4px;
 }
 
+.about-container {
+  text-align: left;
+}
+
 .text-container {
   height: 50vh;
   text-align: center;
@@ -102,8 +97,8 @@ input {
 
   h3 {
     font-weight: 200;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   h2 {
@@ -111,8 +106,12 @@ input {
     margin-right: auto;
     width: 55vw;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-top: 0px;
   }
+}
+
+.login-about-container {
+  margin-top: 2em;
 }
 
 @media (max-width: 768px) {
@@ -140,10 +139,14 @@ input {
       margin-bottom: 10px;
     }
   }
+
+  .login-about-container {
+    margin-top: 0;
+  }
 }
 
 .button-container {
-  height: 300px;
+  height: 250px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
@@ -285,4 +288,13 @@ input {
   margin-left: 24vw; 
   font-size: 20px;
   font-family: $font-stack;
+}
+
+.utb-about {
+  background-color: $yellow;
+  border: none;
+  font-size: 20px;
+  font-family: $font-stack;
+  margin-left: 10vw;
+  margin-top: 20px;
 }

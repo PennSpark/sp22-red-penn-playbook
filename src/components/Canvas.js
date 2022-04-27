@@ -1,19 +1,30 @@
 import React, { useRef, useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import './Canvas.css';
+
 
 
 
 const Canvas = props => {
     let canvasRef = useRef();
-    
+    const loadedText = useSelector((state) => state.pennintouchData.data);
+
     useEffect(() => {
         let canvas = canvasRef.current;
         let context = canvas.getContext('2d');
         
         context.font = "30px Arial";
-        context.fillText("hello world", 50, 50);
+        for (const text of loadedText) {
+            context.fillText(text.text, text.xpos, text.ypos);
+        }
       });
       
-      return <canvas ref={canvasRef} {...props}/>
+      return (
+        <div>
+            <textarea>Hello</textarea>
+            <canvas ref={canvasRef} {...props}/>
+        </div>
+      );
 }
 
 export default Canvas;

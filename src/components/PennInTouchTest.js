@@ -51,7 +51,9 @@ function PennInTouchTEST() {
 
     const [active, setActive] = useState({ active: false, x: 0, y: 0 })
 
-    const [areaText, setAreaText] = useState('')
+    const [areaText, setAreaText] = useState("")
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
 
     function createText(e) {
@@ -62,8 +64,10 @@ function PennInTouchTEST() {
     }
 
     function handleDrag(e) {
-        setActive({ active: true, x: e.x, y: e.y })
-
+        if (!isSubmitting) {
+            console.log(e)
+            setActive({ active: true, x: e.x-e.offsetX, y: e.y-e.offsetY })
+        }
     }
 
     function saveText(e) {
@@ -75,11 +79,11 @@ function PennInTouchTEST() {
         }
         setData([...data, newText])
         setActive({ active: false })
+        setAreaText("")
     }
 
     function handleTextChange(e) {
-        console.log(e.target.value)
-        setAreaText(String(e.value))
+        setAreaText(String(e.target.value))
     }
 
     function activeText() {
@@ -87,9 +91,9 @@ function PennInTouchTEST() {
             return (
                 <Draggable id='dragObj' onStop={(e) => handleDrag(e)} defaultPosition={{ x: active.x, y: active.y }}>
                     <div>
-                        <textarea value = {areaText} onInput={(e) => handleTextChange(e)} style={{ color: "black", zIndex: '2' }}>
+                        <textarea value={areaText} onInput={(e) => handleTextChange(e)} style={{ color: "black", zIndex: '2' }}>
                         </textarea>
-                        <button onClick={saveText}>hi</button>
+                        <button onClick={saveText} onMouseDown={() => setIsSubmitting(true)} onMouseUp={() => setIsSubmitting(false)}>hi</button>
                     </div>
                 </Draggable>
             )

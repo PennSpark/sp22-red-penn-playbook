@@ -27,28 +27,6 @@ function PennInTouchTEST() {
         isEditing: true
     }]);
 
-    const data1 = [{
-        id: 1,
-        text: 'Temporary test text',
-        xpos: 0,
-        ypos: 0,
-        isEditing: false
-    },
-    {
-        id: 2,
-        text: 'Temporary test text 2',
-        xpos: 50,
-        ypos: 50,
-        isEditing: true
-    },
-    {
-        id: 3,
-        text: 'Temporary test text 3',
-        xpos: 150,
-        ypos: 150,
-        isEditing: true
-    }]
-
     const [active, setActive] = useState({ active: false, x: 0, y: 0 })
 
     const [areaText, setAreaText] = useState("")

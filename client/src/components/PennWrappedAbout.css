@@ -28,6 +28,9 @@
 @media (max-width: 768px) {
     .pw-about_container {
         width: 100%;
+        flex-direction: column;
+        margin-top: 0;
+        padding-top: 40px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -38,7 +41,7 @@
         background-color: #54706b;
         opacity: 1;
         margin-right: 135px;
-        margin-top: -41px;
+        margin-top: 0px;
     }
 }
 

@@ -18,7 +18,11 @@ import PennWrappedAbout from "./components/PennWrappedAbout";
 import PennWrapped from "./components/penn-wrapped/PennWrapped";
 import FratParties from "./components/penn-wrapped/FratParties";
 import CloseFriends from "./components/penn-wrapped/CloseFriends";
+import RicePurity from "./components/penn-wrapped/RicePurity";
+import NumDates from "./components/penn-wrapped/NumDates";
+import TimesCried from "./components/penn-wrapped/TimesCried";
 import LookingBack from "./components/penn-wrapped/LookingBack";
+
 import HomeAbout from "./components/HomeAbout";
 import MainLayout from "./components/MainLayout";
 import PennInTouchTEST from "./components/PennInTouchTest";
@@ -42,6 +46,9 @@ export function App() {
             <Route path="1" element={<PennWrapped />} />
             <Route path="2" element={<FratParties />} />
             <Route path="3" element={<CloseFriends />} />
+            <Route path="4" element={<RicePurity />} />
+            <Route path="5" element={<NumDates />} />
+            <Route path="6" element={<TimesCried />} />
             <Route path="11" element={<LookingBack />} />
           </Route>
           <Route path="/about">

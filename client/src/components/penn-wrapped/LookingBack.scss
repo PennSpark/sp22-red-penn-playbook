@@ -8,16 +8,16 @@ $green: #54706B;
 $blue: #577ED2;
 $purple: #EBD4DF;
 
-p {
-    color: $light;
-}
-
 .lb-container {
     display: flex;
     flex-direction: column;
     background-color: $background;
     min-height: 100vh;
     padding: 0 20px;
+
+    p {
+        color: $light;
+    }
 }
 
 .key {

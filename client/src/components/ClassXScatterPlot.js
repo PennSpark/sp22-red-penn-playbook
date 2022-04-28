@@ -142,12 +142,11 @@ const data = [
   },
 ];
 
-export default class ClassXLineGraph extends PureComponent {
+export default class ClassXScatterPlot extends PureComponent {
   render() {
     return (
       <ResponsiveContainer width={'100%'} height={300}>
-        <LineChart
-
+        <ScatterChart
           width={500}
           height={300}
           data={data}
@@ -158,25 +157,12 @@ export default class ClassXLineGraph extends PureComponent {
             bottom: 5,
           }}
         >
-          <defs>
-            <linearGradient id="colorEnergy" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="red" />
-              <stop offset="100%" stopColor="green" />
-            </linearGradient>
-            <linearGradient id="colorMood" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="orange" />
-              <stop offset="100%" stopColor="blue" />
-            </linearGradient>
-          </defs>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Line type="monotone" dataKey="Energy" strokeWidth={3} stroke="blue" activeDot={{ r: 4, }} />
-          <Line type="monotone" dataKey="Mood" strokeWidth={3} stroke="red" activeDot={{ r: 4, }} />
-          <Line type="monotone" dataKey="Amount of Sleep" strokeWidth={3} stroke="green" activeDot={{ r: 4, }} />
-        </LineChart>
+          <CartesianGrid />
+          <XAxis type ="number" dataKey="Energy" />
+          <YAxis type ="number" dataKey="Mood" />
+          <Tooltip cursor={{ strokeDasharray: '3 3' }} />
+				<Scatter name="A school" data={data} fill="#8884d8" />
+        </ScatterChart>
       </ResponsiveContainer>
     );
   }

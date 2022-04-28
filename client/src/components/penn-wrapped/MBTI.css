@@ -1,0 +1,92 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+
+@keyframes slidein {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: 51%;
+    }
+  }
+  @keyframes slidein1 {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: 76%;
+    }
+  }
+  @keyframes slidein2 {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: 56%;
+    }
+  }
+
+.mbti-container {
+    width: 51em;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trait-pair-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.empty-bar {
+    height: 12px;
+    width: 30em;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+.bar-filler-1 {
+    height: 12px;
+    border-radius: 0px 10px 10px 0px;
+    float: right;
+    background-color: #4396b4;
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.bar-filler-2 {
+    height: 12px;
+    border-radius: 10px 0px 0px 10px;
+    width: 76%;
+    background-color: #e4ae3a;
+    animation-name: slidein1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.bar-filler-3 {
+    height: 12px;
+    border-radius: 0px 10px 10px 0px;
+    float: right;
+    width: 56%;
+    background-color: #32a574;
+    animation-name: slidein2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.bar-filler-4 {
+    height: 12px;
+    border-radius: 10px 0px 0px 10px;
+    width: 56%;
+    background-color: #886299;
+    animation-name: slidein2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}

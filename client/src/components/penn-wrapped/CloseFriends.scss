@@ -1,0 +1,37 @@
+$background: #EBD4DF;
+
+.cf-container {
+    background-color: $background;
+    min-height: 100vh;
+    padding: 10px 30px;
+    text-align: center;
+
+    h1 {
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+    img {
+        transform: scale(1);
+    }
+}
+
+.cf-lone {
+    display: flex;
+    justify-content: flex-start;
+
+    img {
+        position: absolute;
+        transform: scale(0.6);
+    }
+}
+
+.cf-top-row,
+.cf-bot-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cf-top-row {
+    margin-top: 20px;
+}

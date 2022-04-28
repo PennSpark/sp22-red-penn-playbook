@@ -1,0 +1,45 @@
+.tw-block {
+    background-color: #54706B;
+    transition: 0.2s;
+}
+
+.tw-block h1 {
+    font-weight: 800;
+    color: white;
+    font-size: 3rem;
+}
+
+.tw-block p {
+    color: white;
+    
+}
+
+#tw-text {
+    display: inline-block;
+    position: relative;
+    top: 20vh;
+    transition: 0.2s;
+    width: 30vw;
+}
+
+#tw-img {
+    display: inline-block;
+    position: relative;
+    top: 20vh;
+    transition: 0.2s;
+    width: 50vw;
+}
+
+
+@media (max-width: 700px) {
+
+    #tw-text, #tw-img {
+        width: 100vw;
+    }
+
+    #tw-text {
+        top: 20vh;
+        transition: 0.2s;
+    }
+  }
+  

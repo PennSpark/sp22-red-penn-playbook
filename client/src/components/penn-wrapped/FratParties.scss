@@ -1,0 +1,27 @@
+$background: #A6CEE3;
+
+.fp-container {
+    background-color: $background;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+
+    img {
+        height: 40vw;
+    }
+}
+
+.fp-row {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .fp-row {
+        flex-direction: column;
+
+        img {
+            height: 80vw;
+        }
+    }
+}

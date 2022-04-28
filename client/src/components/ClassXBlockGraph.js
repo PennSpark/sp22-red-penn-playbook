@@ -145,20 +145,30 @@ const data = [
 // Energy ranges from 5.07 to 8.11
 
 let colorFromNumbers = (mood, energy) => {
+    var normMood = 0;
+    var normEnergy = 0;
     var r = 0.0;
     var g = 0.0;
     var b = 0.0;
 
+    // Rescale mood and energy values to 0 - 1
+    mood >= 6.74 ? (normMood = (mood - 6.74) / 2.03) : (normMood = (mood - 4.71) / 2.03)
+    energy >= 6.59 ? (normEnergy = (energy - 6.59) / 1.52) : (normEnergy = (mood - 5.07) / 1.52)
+
     if (mood >= 6.74 && energy >= 6.59) {
         // Yellow
-        r = 255;
-        g = 219;
-        b = 120;
+        // (207 172 47), 209 160 48
+        // (222 204 45), 227 157 42
+        r = normEnergy * (-15) + 222;
+        g = 204 - 32 * normEnergy - 48 * normMood;
+        b = 46;
     } else if (mood >= 6.74) {
         // Green
-        r = 111;
-        g = 172;
-        b = 123;
+        // 115 165 64, 114 158 64
+        // 45 132 62, 44 112 58
+        r = normEnergy * 70 + 45;
+        g = 132 + 33 * normEnergy - 20 * normMood;
+        b = 63;
     } else if (energy >= 6.59) {
         // Red
         // (174,39,42) (173,67,40)
@@ -166,14 +176,16 @@ let colorFromNumbers = (mood, energy) => {
         // Energy R: 214 -> 174
         // Mood G: 38 -> 87
         // B: 42
-        r = (energy - 6.59) / 1.52 * (-40) + 214;
-        g = (mood - 6.74) / 2.03 * (49) + 38;
+        r = normEnergy * (-40) + 214;
+        g = normMood * (49) + 38;
         b = 42;
     } else {
         // Blue
-        r = 87;
-        g = 126;
-        b = 220;
+        // 60 78 134, 57 145 143
+        // 49 51 81, 51 73 73
+        r = 49 + 11 * normEnergy;
+        g = 51 + 27 * normEnergy + 22 * normMood;
+        b = 161 + 53 * normEnergy - 8 * normMood;
     }
     return `${r},${g},${b}`;
 }

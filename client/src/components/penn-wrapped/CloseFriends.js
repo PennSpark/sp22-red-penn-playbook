@@ -11,17 +11,17 @@ import Friends16 from '../svg/friends16.svg';
 const CloseFriends = () => {
     return (
         <div>
-            <div class="cf-container">
-                <div class="cf-lone">
+            <div className="pw-container cf-container">
+                <div className="cf-lone">
                     <img src={Friends0} alt="2.7% have 0 close friends" />
                 </div>
-                <div class="cf-top-row">
+                <div className="cf-top-row">
                     <img src={Friends1} alt="28.1% have 1-3 close friends" />
                     <img src={Friends4} alt="44.5% have 4-6 close friends" />
                     <img src={Friends7} alt="16.4% have 7-9 close friends" />
                 </div>
                 <h1>"How many close friends do you have at Penn?"</h1>
-                <div class="cf-bot-row">
+                <div className="cf-bot-row">
                     <img src={Friends10} alt="4.8% have 10-12 close friends" />
                     <img src={Friends16} alt="3.4% have 16+ close friends" />
                 </div>

@@ -1,0 +1,26 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+
+.peepeepoopoo {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.results-h1 {
+    font-family: "HK Grotesk";
+}
+
+.results-h2, .results-h3 {
+    max-width: 60vw;
+    margin: 30px auto;
+    font-weight: 400;
+    font-family: "Menlo";
+}
+
+.results-h2 {
+    margin-top: 30vh;
+}
+
+.results-h3 {
+    font-size: 1em;
+    font-style: italic;
+}

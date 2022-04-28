@@ -1,0 +1,101 @@
+$background: #3D3339;
+$dark: #292929;
+$light: #efefef;
+$red: #CF6C5D;
+$gold: #FFDB78;
+$yellow: #FFF9EF;
+$green: #54706B;
+$blue: #577ED2;
+$purple: #EBD4DF;
+
+.lb-container {
+    display: flex;
+    flex-direction: column;
+    background-color: $background;
+    min-height: 100vh;
+    padding: 0 20px;
+
+    p {
+        color: $light;
+    }
+}
+
+.key {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px auto 0;
+
+    div {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.graph-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.graph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bars {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 70vh;
+    width: 30vw;
+
+    div {
+        height: 10em;
+        width: 5vw;
+    }
+}
+
+.box1,
+.bar1 {
+    background-color: $purple;
+}
+
+.box2,
+.bar2 {
+    background-color: $blue;
+}
+
+.box3,
+.bar3 {
+    background-color: $green;
+}
+
+.box4,
+.bar4 {
+    background-color: $gold;
+}
+
+.box5,
+.bar5 {
+    background-color: $red;
+}
+
+@media (max-width: 768px) {
+    .graph-container {
+        flex-direction: column;
+    }
+
+    .graph {
+        margin-top: -10vh;
+    }
+
+    .bars {
+        width: 50vw;
+
+        div {
+            width: 10vw;
+        }
+    }
+}

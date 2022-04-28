@@ -4,9 +4,23 @@ const User = require("../models/user");
 
 const Question = require("../models/question");
 
+const Text = require("../models/text");
+
 const ObjectId = require("mongodb").ObjectId;
 
 const router = express.Router();
+
+router.post("/comment", async(req, res, next) => {
+  const { body } = req; 
+  const { text, xpos, ypos } = body; 
+
+  try {
+    await Text.create({ text, xpos, ypos });
+  } catch (e) {
+    next(e);
+  }
+});
+
 
 router.post("/signup", async (req, res, next) => {
   const { body } = req;
@@ -218,6 +232,15 @@ router.post("/updateAns15", async (req, res, next) => {
     let user = await User.findOne({ _id });
     console.log(user);
     res.send("Answer 15 update sucessful");
+  } catch (e) {
+    next(e);
+  }
+});
+
+router.get("/texts", async (req, res, next) => {
+  try {
+    const texts = await Text.find();
+    res.json(texts);
   } catch (e) {
     next(e);
   }

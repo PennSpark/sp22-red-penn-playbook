@@ -3,13 +3,7 @@ import { Link } from 'react-router-dom';
 import './PennWrappedAbout.css';
 import { ReactComponent as RightArrow } from './svg/rightArrow.svg';
 
-import CloseFriends from "./penn-wrapped/CloseFriends"
-import FratParties from "./penn-wrapped/FratParties"
-// import LeastFavClass from "./penn-wrapped/LeastFavClass"
-import LookingBack from "./penn-wrapped/LookingBack"
-import NumDates from "./penn-wrapped/NumDates"
-import RicePurity from "./penn-wrapped/RicePurity"
-import TimesCried from "./penn-wrapped/TimesCried"
+import PennWrapped from './penn-wrapped/PennWrapped';
 
 const PennWrappedAbout = () => {
     return (
@@ -27,14 +21,9 @@ const PennWrappedAbout = () => {
                         This exhibition is still a work in progress, so be sure to check back soon!</p>
                 </div>
 
-                {/* <CloseFriends /> */}
-                {/* <FratParties />
-                <LookingBack />
-                <NumDates />
-                <RicePurity /> */}
-                {/* <TimesCried /> */}
                 
             </div>
+            <PennWrapped />
         </div>
     );
 }

@@ -2,12 +2,26 @@ import React, { useRef, useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { pennintouchActions } from '../redux/pennintouch-data';
 import Draggable from 'react-draggable';
+import axios from 'axios';
 
 
 
 function PennInTouchTEST() {
-    const data = useSelector((state) => state.pennintouchData.data);
+    const [data, setData] = useState([]);
 
+    const getData = async () => {
+        try {
+            const resp = await axios.get('/api/texts')
+            setData(resp.data);
+        } catch(e) {
+            alert('an error occurred')
+        }
+    }
+
+    getData();
+    
+    //const data = useSelector((state) => state.pennintouchData.data);
+    
     const [active, setActive] = useState({ active: false, x: 0, y: 0 })
 
     const [areaText, setAreaText] = useState("")
@@ -15,7 +29,6 @@ function PennInTouchTEST() {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const dispatch = useDispatch();
-
 
     function createText(e) {
         if (!active.active) {
@@ -31,12 +44,11 @@ function PennInTouchTEST() {
 
     function saveText(e) {
         var newText = {
-            text: areaText,
-            xpos: active.x,
-            ypos: active.y,
-            isEditing: false,
+            text : areaText,
+            xpos : active.x,
+            ypos : active.y,
         }
-        dispatch(pennintouchActions.addTextHandler(newText));
+        axios.post('/api/comment', newText)
         setActive({ active: false })
         setAreaText("")
     }

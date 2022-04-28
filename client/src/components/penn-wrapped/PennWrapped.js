@@ -15,6 +15,7 @@ const PennWrapped = () => {
   return (
     <div className="pw-outer-container">
       <div className="pw-inner-container">
+      <div className="pw-block"><RicePurity /></div>
       <div className="pw-block"><ThreeWords /></div>
         <div className="pw-block"><CloseFriends /></div>
         <div className="pw-block"><FratParties /></div>
@@ -22,7 +23,6 @@ const PennWrapped = () => {
         <div className="pw-block"><LookingBack /></div>
         <div className="pw-block"><MBTI /></div>
         <div className="pw-block"><NumDates /></div>
-        <div className="pw-block"><RicePurity /></div>
         <div className="pw-block"><TimesCried /></div>
       </div>
     </div>

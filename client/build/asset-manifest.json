@@ -1,24 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.f2096ca4.css",
-    "main.js": "/static/js/main.1f3de705.js",
+    "main.css": "/static/css/main.360e222c.css",
+    "main.js": "/static/js/main.babf8ec0.js",
+    "static/media/frat0.svg": "/static/media/frat0.d03c9b52eee3f27e44228d31fa2b47b4.svg",
+    "static/media/frat3.svg": "/static/media/frat3.b3c71d83d0bc91007722555558eadccb.svg",
+    "static/media/frat6.svg": "/static/media/frat6.1584a0ad3fbec721d3bf65ca6118992c.svg",
     "static/media/spark.png": "/static/media/spark.2fb895f69cd99f00cdd4.png",
-    "static/media/button-outline.svg": "/static/media/button-outline.18d5506d210f969494f64f2a9e5725de.svg",
-    "static/media/button.svg": "/static/media/button.bb4818e6653cfcaadcc0ac7018a8ab5e.svg",
-    "static/media/buttonGreenDown.svg": "/static/media/buttonGreenDown.bb3c10da73f93bca5098b288ba4c55eb.svg",
-    "static/media/buttonRedDown.svg": "/static/media/buttonRedDown.e44a915196f4395061848c771719c33b.svg",
-    "static/media/buttonYellowDown.svg": "/static/media/buttonYellowDown.5c29effbbc405f251a493b6e52225ea7.svg",
-    "static/media/buttonDown.svg": "/static/media/buttonDown.0f753d50d1c066c863f510eca9913438.svg",
+    "static/media/friends16.svg": "/static/media/friends16.2da3c63c5fea329959b8deacd8143508.svg",
+    "static/media/friends10.svg": "/static/media/friends10.56edbff9cb72482dc4da8dd2e58d3a8f.svg",
+    "static/media/friends7.svg": "/static/media/friends7.52409fd27984c954fbff4d1b21f0405d.svg",
+    "static/media/friends1.svg": "/static/media/friends1.fd27625ac07df7c849a4f29404eacde0.svg",
+    "static/media/friends4.svg": "/static/media/friends4.212fd8942a88532ae027788a4bae32c8.svg",
+    "static/media/button-outline.svg": "/static/media/button-outline.ff42a8783c15e6ebe0bdb334e2bbe17d.svg",
+    "static/media/friends0.svg": "/static/media/friends0.128101b8a96b37b21b21858b7ef72b3f.svg",
+    "static/media/button.svg": "/static/media/button.c3b1e6f6bd50ec6d84e4238d098895f2.svg",
+    "static/media/buttonGreenDown.svg": "/static/media/buttonGreenDown.3b953b01bba9615d8fc3901cec6dc052.svg",
+    "static/media/buttonRedDown.svg": "/static/media/buttonRedDown.264ac889d14cf66394fd4a1c1601d6cc.svg",
+    "static/media/buttonYellowDown.svg": "/static/media/buttonYellowDown.7252b47c907ccd18a9dc51044598023e.svg",
+    "static/media/buttonDown.svg": "/static/media/buttonDown.0c21c89dc1bab56d1a84a407b73eed34.svg",
     "index.html": "/index.html",
-    "static/media/buttonYellow.svg": "/static/media/buttonYellow.d88ae2f9018d9632204b75107e0975a2.svg",
-    "static/media/buttonGreen.svg": "/static/media/buttonGreen.a7197f9bd869ee2efe65dabd6dff0efa.svg",
-    "static/media/buttonRed.svg": "/static/media/buttonRed.f25641836927779c652af23e78695bcf.svg",
-    "static/media/rightArrow.svg": "/static/media/rightArrow.1c77fee97c5155ee681a718ef17a8906.svg",
-    "main.f2096ca4.css.map": "/static/css/main.f2096ca4.css.map",
-    "main.1f3de705.js.map": "/static/js/main.1f3de705.js.map"
+    "static/media/buttonYellow.svg": "/static/media/buttonYellow.ece2d9cbd8f370b9f0125f3a45906e0f.svg",
+    "static/media/buttonGreen.svg": "/static/media/buttonGreen.da011ce3e69d45c105c92b7da86dcaf5.svg",
+    "static/media/buttonRed.svg": "/static/media/buttonRed.149e58b28f180b7557f1d835e78ac024.svg",
+    "static/media/rightArrow.svg": "/static/media/rightArrow.db0e07ed8405b0772e57b2205dab12e8.svg",
+    "main.360e222c.css.map": "/static/css/main.360e222c.css.map",
+    "main.babf8ec0.js.map": "/static/js/main.babf8ec0.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2096ca4.css",
-    "static/js/main.1f3de705.js"
+    "static/css/main.360e222c.css",
+    "static/js/main.babf8ec0.js"
   ]
 }

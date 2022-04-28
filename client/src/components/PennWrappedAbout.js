@@ -1,11 +1,14 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./PennWrappedAbout.css";
 import { ReactComponent as RightArrow } from "./svg/rightArrow.svg";
 
-import PennWrapped from "./penn-wrapped/PennWrapped";
 
 const PennWrappedAbout = () => {
+  const navigate = useNavigate()
+  const start = () => {
+        navigate(`../../penn-wrapped`);
+  }
   return (
     <div className="pw-about">
       <div className="pw-active" />
@@ -16,7 +19,10 @@ const PennWrappedAbout = () => {
         </div>
         <div class="pw-about-container">
           <h1 className="about-h1">Penn Wrapped</h1>
-          <RightArrow />
+          <div class="start-container">
+            <RightArrow />
+            <button type="button" className="utb-about" onClick={() => start()}>Start</button>
+          </div>
           <p className="about-p">
             Inspired by Spotify Wrapped, Penn Wrapped is a compilation of survey
             data on the experiences of Penn students this semester. This
@@ -24,15 +30,6 @@ const PennWrappedAbout = () => {
             soon!
           </p>
         </div>
-      </div>
-      <div className="penn-wrapped-content">
-        <PennWrapped />
-      </div>
-      <div className="penn-wrapped-mobile-msg">
-        <h2>
-          Sorry, this exhibition is only available on Desktop view. Please try
-          again on your computer!
-        </h2>
       </div>
     </div>
   );

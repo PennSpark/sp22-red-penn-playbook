@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./style.scss";
 
+import Title from "./Title";
 import ThreeWords from "./ThreeWords";
 import CloseFriends from "./CloseFriends";
 import FratParties from "./FratParties";
@@ -15,6 +16,7 @@ const PennWrapped = () => {
   return (
     <div className="pw-outer-container">
       <div className="pw-inner-container">
+        <div className="pw-block"><Title /></div>
         <div className="pw-block"><NumDates /></div>
         <div className="pw-block"><RicePurity /></div>
         <div className="pw-block"><ThreeWords /></div>

@@ -6,7 +6,7 @@ import spark from "./spark.png";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className="container-home">
       <div className="wholebook">
         <HTMLFlipBook
           width={400}

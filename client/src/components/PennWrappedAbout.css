@@ -114,3 +114,11 @@
     display: none;
   }
 }
+
+
+.utb-about {
+    background-color: #ebebeb;
+    border: none;
+    font-size: 40px;
+    font-family: "HK Grotesk";
+  }

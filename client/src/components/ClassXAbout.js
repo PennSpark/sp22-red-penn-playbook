@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './ClassXAbout.css';
 import {Button, Modal, Card, Col, Row, Container} from 'react-bootstrap';
 import ClassXLineGraph from './ClassXLineGraph.js';
-import 'bootstrap/dist/css/bootstrap.css';
 import ClassXBlockGraph from './ClassXBlockGraph';
 import ClassXScatterPlot from './ClassXScatterPlot';
 

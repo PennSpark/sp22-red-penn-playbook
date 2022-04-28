@@ -7,7 +7,7 @@ import Frat6 from '../svg/frat6.svg';
 
 const RicePurity = () => {
     return (
-        <div>
+        <div className="pw-container">
             <div class="rp-container">
             <h1>"How many frat parties did you go to?"</h1>
                 <div class="fp-row">

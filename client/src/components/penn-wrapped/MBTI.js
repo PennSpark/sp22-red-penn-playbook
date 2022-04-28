@@ -4,7 +4,7 @@ import './MBTI.css'
 
 const MBTI = () => {
     return (
-        <div>
+        <div className="pw-container">
             <div class="mbti-container">
                 <h1>Our personality is</h1>
                 <div class="trait-pair-container">

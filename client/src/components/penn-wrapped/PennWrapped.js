@@ -12,19 +12,17 @@ import TimesCried from "./TimesCried";
 
 const PennWrapped = () => {
   return (
-    <div className="pw-main-container">
-      <div className="pw-container">
-        <h1>HELLO</h1>
+    <div className="pw-outer-container">
+      <div className="pw-inner-container">
+        <div className="pw-block"><CloseFriends /></div>
+        <div className="pw-block"><FratParties /></div>
+        <div className="pw-block"><LeastFavClass /></div>
+        <div className="pw-block"><LookingBack /></div>
+        <div className="pw-block"><MBTI /></div>
+        <div className="pw-block"><NumDates /></div>
+        <div className="pw-block"><RicePurity /></div>
+        <div className="pw-block"><TimesCried /></div>
       </div>
-
-      <CloseFriends />
-      <FratParties />
-      <LeastFavClass />
-      <LookingBack />
-      <MBTI />
-      <NumDates />
-      <RicePurity />
-      <TimesCried />
     </div>
   );
 };

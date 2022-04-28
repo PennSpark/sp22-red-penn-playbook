@@ -23,7 +23,13 @@ const PennWrappedAbout = () => {
 
                 
             </div>
-            <PennWrapped />
+            <div className="penn-wrapped-content">
+                <PennWrapped />
+            </div>
+            <div className="penn-wrapped-mobile-msg">
+                <h2>Sorry, this exhibition is only available on Desktop view. Please try again on your computer!</h2>
+            </div>
+            
         </div>
     );
 }

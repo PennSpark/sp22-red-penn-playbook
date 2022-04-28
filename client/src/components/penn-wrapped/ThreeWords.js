@@ -9,7 +9,7 @@ const ThreeWords = () => {
     <div className="pw-container tw-block">
       <div className="spacer-10" />
       <div id="tw-text">
-        <h1>this year in 3 words...</h1>
+        <h1>This semester in 3 words...</h1>
         <p>adaadfasafsafasdfasaadsfsdfasdfsafasdfasdfasdfasd</p>
       </div>
       <div className="spacer-3" />

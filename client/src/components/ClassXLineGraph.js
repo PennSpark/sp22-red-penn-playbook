@@ -43,7 +43,7 @@ const data = [
     Mood: 6.15,
     Energy: 5.53,
     "Amount of Sleep": 6.76,
-  }, 
+  },
   {
     name: '04-08',
     Mood: 6.92,
@@ -147,7 +147,7 @@ export default class ClassXLineGraph extends PureComponent {
     return (
       <ResponsiveContainer width={'100%'} height={300}>
         <LineChart
-          
+
           width={500}
           height={300}
           data={data}
@@ -158,14 +158,24 @@ export default class ClassXLineGraph extends PureComponent {
             bottom: 5,
           }}
         >
+          <defs>
+            <linearGradient id="colorEnergy" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="red" />
+              <stop offset="100%" stopColor="green" />
+            </linearGradient>
+            <linearGradient id="colorMood" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="orange" />
+              <stop offset="100%" stopColor="blue" />
+            </linearGradient>
+          </defs>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="Energy" strokeWidth={3} stroke="#FFDB78" activeDot={{ r: 4, }} />
-          <Line type="monotone" dataKey="Mood" strokeWidth={3} stroke="#EAD2DD" activeDot={{ r: 4, }}/>
-          <Line type="monotone" dataKey="Amount of Sleep" strokeWidth={3} stroke="#DDE4F3" activeDot={{ r: 4,}}/>
+          <Line type="monotone" dataKey="Energy" strokeWidth={3} stroke="url(#colorEnergy)" activeDot={{ r: 4, }} />
+          <Line type="monotone" dataKey="Mood" strokeWidth={3} stroke="url(#colorMood)" activeDot={{ r: 4, }} />
+          <Line type="monotone" dataKey="Amount of Sleep" strokeWidth={3} stroke="purple" activeDot={{ r: 4, }} />
         </LineChart>
       </ResponsiveContainer>
     );

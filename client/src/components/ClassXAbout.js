@@ -4,6 +4,8 @@ import './ClassXAbout.css';
 import {Button, Modal, Card, Col, Row, Container} from 'react-bootstrap';
 import ClassXLineGraph from './ClassXLineGraph.js';
 import 'bootstrap/dist/css/bootstrap.css';
+import ClassXBlockGraph from './ClassXBlockGraph';
+import ClassXScatterPlot from './ClassXScatterPlot';
 
 const ClassXAbout = () => {
   const values = [
@@ -71,8 +73,9 @@ const ClassXAbout = () => {
       <div className="cx-about_container">
       <h1 className="about-h1">Mood + Energy + Sleep Through 23 Days</h1>
       <ClassXLineGraph/>
-      
+      <ClassXScatterPlot />
       </div>
+      <ClassXBlockGraph />
     </>
 
     );

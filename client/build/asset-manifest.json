@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.306d299a.css",
-    "main.js": "/static/js/main.8d9a8b8f.js",
+    "main.css": "/static/css/main.8bd21023.css",
+    "main.js": "/static/js/main.981d834a.js",
     "static/media/wordcloud2.png": "/static/media/wordcloud2.d0c8604094fd876fffc6.png",
     "static/media/frat0.svg": "/static/media/frat0.d03c9b52eee3f27e44228d31fa2b47b4.svg",
     "static/media/frat3.svg": "/static/media/frat3.b3c71d83d0bc91007722555558eadccb.svg",
@@ -31,11 +31,11 @@
     "static/media/buttonGreen.svg": "/static/media/buttonGreen.da011ce3e69d45c105c92b7da86dcaf5.svg",
     "static/media/buttonRed.svg": "/static/media/buttonRed.149e58b28f180b7557f1d835e78ac024.svg",
     "static/media/rightArrow.svg": "/static/media/rightArrow.db0e07ed8405b0772e57b2205dab12e8.svg",
-    "main.306d299a.css.map": "/static/css/main.306d299a.css.map",
-    "main.8d9a8b8f.js.map": "/static/js/main.8d9a8b8f.js.map"
+    "main.8bd21023.css.map": "/static/css/main.8bd21023.css.map",
+    "main.981d834a.js.map": "/static/js/main.981d834a.js.map"
   },
   "entrypoints": [
-    "static/css/main.306d299a.css",
-    "static/js/main.8d9a8b8f.js"
+    "static/css/main.8bd21023.css",
+    "static/js/main.981d834a.js"
   ]
 }

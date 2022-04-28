@@ -33,6 +33,7 @@ const ClassXAbout = () => {
     setLink(values.filter(x => x.name === name)[0]["link"])
     console.log(link)
     setShow(true);
+    console.log(show)
   }
 
   return (
@@ -76,15 +77,15 @@ const ClassXAbout = () => {
       </div>
 
 
-      <div class="cx-modal" show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
+      {show && <div class="cx-modal" fullscreen={fullscreen} >
         <div class="cx-modal-heading">
           <h1>{senior}</h1>
-          <span class="close">&times;</span>
+          <span class="close" onClick={() => setShow(false)}>&times;</span>
         </div>
         <div class="iframe-container">
           <iframe src={link} class="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-      </div>
+      </div>}
 
       <div className="cx-about_container">
         <h1 className="about-h1">Mood + Energy + Sleep Through 23 Days</h1>
@@ -92,7 +93,7 @@ const ClassXAbout = () => {
         {/* <ClassXScatterPlot /> */}
         <ClassXBarChart />
       </div>
-      <ClassXBlockGraph />
+      {/* <ClassXBlockGraph /> */}
 
     </>
 

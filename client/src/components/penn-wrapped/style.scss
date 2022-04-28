@@ -1,6 +1,6 @@
 .pw-block {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .pw-inner-container {
@@ -49,5 +49,14 @@
     width: 0vw;
     transition: 0.2s;
   }
+
+  // .pw-outer-container, .pw-inner-container {
+  //   transform: none;
+  //   overflow-x: scroll;
+  // }
+
+  // .pw-inner-container {
+  //   display: inline-block;
+  // }
 }
 

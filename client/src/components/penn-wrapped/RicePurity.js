@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import "./style.scss";
 import "./RicePurity.scss";
-import rice from "./img/rice.gif"
+// import rice from "./img/rice.gif"
 
 const RicePurity = () => {
   return (
@@ -13,7 +13,7 @@ const RicePurity = () => {
           <p>For these reasons...</p>
       </div>
       <div className="spacer-3" />
-        <img id="rp-img" src={rice} />
+        {/* <img id="rp-img" src={rice} /> */}
       <div className="spacer-10" />
     </div>
   );

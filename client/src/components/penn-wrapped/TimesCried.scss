@@ -1,5 +1,7 @@
 .tc-container {
     display: flex;
+    justify-content: center;
+    gap: 50px;
     padding: 20px 40px;
     background-color: #A6CEE3;
     min-width: 100vw;
@@ -7,7 +9,8 @@
 
     h1 {
         text-align: center;
-        margin-top: 0;
+        margin-top: 10px;
+        font-size: 1.5em;
     }
 
     .img-row {
@@ -31,8 +34,9 @@
     #wawa {
         display: none;
     }
+
     #wawa-flip {
-        display:inline;
+        display: inline;
     }
 }
 
@@ -44,8 +48,9 @@
     #vp {
         display: none;
     }
+
     #vp-flip {
-        display:inline;
+        display: inline;
     }
 }
 
@@ -57,8 +62,9 @@
     #love {
         display: none;
     }
+
     #love-flip {
-        display:inline;
+        display: inline;
     }
 }
 
@@ -70,8 +76,9 @@
     #college {
         display: none;
     }
+
     #college-flip {
-        display:inline;
+        display: inline;
     }
 }
 
@@ -83,8 +90,9 @@
     #button {
         display: none;
     }
+
     #button-flip {
-        display:inline;
+        display: inline;
     }
 }
 
@@ -96,8 +104,9 @@
     #tampons {
         display: none;
     }
+
     #tampons-flip {
-        display:inline;
+        display: inline;
     }
 }
 
@@ -118,10 +127,7 @@
     height: 70vh;
     width: 30vw;
     margin-top: 50px;
-
-    p {
-        margin-top: 0;
-    }
+    gap: 20px;
 
     div {
         height: 100%;
@@ -137,6 +143,57 @@
 
     .label-cry {
         width: 20%;
-        align-self: flex-end;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 10px;
+        color: black;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3,
+    .bar4,
+    .bar5,
+    .bar6 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 5px;
+        border-radius: 0 10px 10px 0;
+
+        p {
+            color: white;
+        }
+    }
+
+    .bar1 {
+        background-color: #577ed2;
+        width: 24%;
+    }
+
+    .bar2 {
+        background-color: #292226;
+        width: 72%;
+    }
+
+    .bar3 {
+        background-color: #54706b;
+        width: 42%;
+    }
+
+    .bar4 {
+        background-color: #cf6c5d;
+        width: 18%;
+    }
+
+    .bar5 {
+        background-color: #ffdb78;
+        width: 10%;
+    }
+
+    .bar6 {
+        background-color: #6fac7b;
+        width: 34%;
     }
 }

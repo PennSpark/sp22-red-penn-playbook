@@ -19,64 +19,72 @@ const TimesCried = () => {
         <div className="pw-container">
             <div class="tc-container">
                 <div class="graph-cry">
-                    <h1>Number of time cried.</h1>
+                    <h1>How many times did you cry this semester?</h1>
                     <div class="bars-cry">
                         <div class='bardiv-cry'>
                             <div class='label-cry'>
                                 0
                             </div>
-                            <div style={{ width: "14%" }}>
-                                <div class="bar1">
-                                    <p>14%</p>
+                            <div class="bar1">
 
-                                </div>
+                                <p>12%</p>
+
+
                             </div>
 
                         </div>
                         <div class='bardiv-cry'>
                             <div class='label-cry'>1-3</div>
-                            <div style={{ width: "39%" }}>
 
-                                <div class="bar2">
-                                    <p>39%</p>
 
-                                </div>
+                            <div class="bar2">
+                                <p>36%</p>
+
+
                             </div>
                         </div>
                         <div class='bardiv-cry'>
                             <div class='label-cry'>4-6</div>
-                            <div style={{ width: "27%" }}>
 
-                                <div class="bar3">
-                                    <p>27%</p>
 
-                                </div>
+                            <div class="bar3">
+                                <p>21%</p>
+
+
                             </div>
                         </div>
                         <div class='bardiv-cry'>
                             <div class='label-cry'>7-9</div>
-                            <div style={{ width: "50%" }} >
 
-                                <div class="bar4">
-                                    <p>50%</p>
 
-                                </div>
+                            <div class="bar4">
+                                <p>9%</p>
+
+
                             </div>
                         </div>
                         <div class='bardiv-cry'>
                             <div class='label-cry'>10-12</div>
-                            <div style={{ width: "16%" }} >
 
-                                <div class="bar5">
-                                    <p>16% </p>
+                            <div class="bar5">
+                                <p>5% </p>
 
-                                </div>
+                            </div>
+                        </div>
+                        <div class='bardiv-cry'>
+                            <div class='label-cry'>13+</div>
+
+
+                            <div class="bar6">
+                                <p>17% </p>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="cry-locations">
-                    <h1>Reason for cry</h1>
+                    <h1>Which reason has made you cry the most?</h1>
                     <div class="img-row">
                         <div class="image-wrapper-wawa"><img src={Wawa} id="wawa" /><img src={WawaFlip} id="wawa-flip" /></div>
                         <div class="image-wrapper-vp"><img src={VanPelt} id="vp" /><img src={VanPeltFlip} id="vp-flip" /></div>

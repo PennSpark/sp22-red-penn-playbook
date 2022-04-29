@@ -8,7 +8,7 @@
 }
 
 .cx-about_container {
-    width: 51em;
+    width: 55em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -119,7 +119,6 @@
         width: auto;
         margin-bottom: 2rem;
         padding: 15px;
-        padding-bottom: 5px;
     
         img {
             max-width: 20vw;
@@ -146,4 +145,10 @@
     padding: 0;
     text-align: center;
     width: 136px;
+}
+
+.cx-graph_container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }

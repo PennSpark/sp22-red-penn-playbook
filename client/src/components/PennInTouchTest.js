@@ -7,7 +7,11 @@ import axios from 'axios';
 
 
 
-function PennInTouchTEST() {
+const PennInTouchTEST = () => {
+    useEffect(() => {
+        window.scroll(0, 4 * window.innerHeight);
+    }, []);
+
     const [data, setData] = useState([]);
 
     const getData = async () => {
@@ -20,9 +24,7 @@ function PennInTouchTEST() {
     }
 
     getData();
-    
-    //const data = useSelector((state) => state.pennintouchData.data);
-    
+        
     const [active, setActive] = useState({ active: false, x: 0, y: 0 })
 
     const [areaText, setAreaText] = useState("")
@@ -54,7 +56,6 @@ function PennInTouchTEST() {
 
     function handleTextChange(e) {
         setAreaText(String(e.target.value))
-        
     }
 
     function activeText() {
@@ -75,9 +76,17 @@ function PennInTouchTEST() {
     return (
         <div className = "pit-window">
             <div className="pit-large-container" onClick={(e) => createText(e)}>
+                <div style={{ color : "black", position: 'absolute', top: (window.innerHeight / 2 * 9) - 100, width: '100vw', display: 'inline-block', whiteSpace: 'pre-wrap'}}>
+                    <div className = "pit-title-container">
+                        <p className = "pit-title">Penn In Touch</p>
+                        <div className = "pit-instructions-container">
+                            <p className = "pit-instructions">Welcome to Penn In Touch! This is a place for celebrations, confessions, and anything in between. Feel free to look around! To enter a story, click anywhere on the page and start typing. NOTE: Please manually shift+enter to create new lines as our website will automatically render everything in one line.</p>
+                        </div>
+                    </div>
+                </div>
                 {data.map(function (text) {
                     return (
-                        <div style={{ color: "black", position: 'absolute', left: (text.xpos), top: (text.ypos), whiteSpace: 'pre-wrap'}}>
+                        <div style={{ color: "black", position: 'absolute', left: (text.xpos), top: (text.ypos), display: 'inline-block', whiteSpace: 'pre-wrap'}}>
                             {text.text}
                         </div>
                     )

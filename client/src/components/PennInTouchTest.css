@@ -11,6 +11,9 @@
 
 .pit-large-container {
     display: inline-block;
+    overflow: scroll;
+    overflow-x: scroll;
+    white-space: nowrap;
     min-height: 1000vh;
     min-width: 1000vw;
     margin-right: 10px;
@@ -19,6 +22,23 @@
 }
 
 
-.filler {
-    display: inline-block;
+.pit-title {
+    font-size: 40px;
+}
+
+.pit-instructions {
+    font-size: 20px;
+}
+
+.pit-title-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.pit-instructions-container {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }

@@ -56,8 +56,13 @@
     cursor: pointer;
 }
 
+// .cx-bg {
+//   background-color: #000000;
+//   z-index: .5;
+// }
+
 .cx-modal {
-    background-color: #fff;
+    background-color: #fefefe;
     position: fixed;
     z-index: 1;
     left: calc((100% - 40em) / 2);
@@ -166,6 +171,7 @@
 }
 
 .cx-graph_container {
+    background-color: #ebebeb;
     text-align: center;
     margin-left: auto;
     margin-right: auto;

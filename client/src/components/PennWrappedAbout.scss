@@ -88,6 +88,10 @@
   font-size: 1.4rem;
 }
 
+.mobile-view-pw-about {
+  display: none;
+}
+
 @media (max-width: 700px) {
   .penn-wrapped-content {
     display: none;
@@ -132,12 +136,19 @@
   .pw-about-container svg {
     display: none;
   }
-}
 
+  .start-container {
+    display: none;
+  }
+
+  .mobile-view-pw-about {
+    display: block;
+  }
+}
 
 .pw-start {
     background-color: #ebebeb;
     border: none;
-    font-size: 40px;
+    font-size: 26px;
     font-family: "HK Grotesk";
   }

@@ -46,7 +46,7 @@ export default function Works() {
 
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 8)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
   
@@ -67,7 +67,7 @@ export default function Works() {
               {d.id == "FratParties" && <FratParties />}
               {d.id == "LookingBack" && <LookingBack />}
               {d.id == "MBTI" && <MBTI />}
-              {d.id == "TimesCrieds" && <TimesCried />}
+              {d.id == "TimesCried" && <TimesCried />}
             </div>
           </div>
         ))}

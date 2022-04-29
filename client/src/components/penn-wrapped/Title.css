@@ -1,11 +1,15 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
 
-.pw-about {
+.title-pw-about {
+  display: flex;
+  align-items: center;
   background-color: #ebebeb;
   padding-bottom: 120px;
+  width: 100%;
+  height: 100%;
 }
 
-.pw-about_container {
+.title-pw-about_container {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -13,16 +17,6 @@
   margin-right: auto;
   margin-top: 80px;
   gap: 5vw;
-}
-
-.pw-active {
-  width: 60px;
-  height: 80px;
-  background-color: #54706b;
-  opacity: 0.95;
-  float: right;
-  margin-right: 210px;
-  margin-top: -80px;
 }
 
 .year-container h1 {
@@ -114,3 +108,14 @@
     display: none;
   }
 }
+
+.cf-about {
+    background-color: #ebebeb;
+    position: absolute;
+    border: none;
+    font-size: 20px;
+    font-family: 'HK Grotesk';
+    top: 80px;
+    left: 150px;
+    z-index: 1;
+  }

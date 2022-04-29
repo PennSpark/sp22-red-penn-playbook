@@ -10,7 +10,7 @@ import Friends16 from '../svg/friends16.svg';
 
 const CloseFriends = () => {
     return (
-        <div className="pw-container">
+        <div className="pw-container cf-big">
             <div className="cf-container">
                 <div className="cf-lone">
                     <img src={Friends0} alt="2.7% have 0 close friends" />

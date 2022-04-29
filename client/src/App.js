@@ -16,7 +16,6 @@ import PennWrappedAbout from "./components/PennWrappedAbout";
 
 // penn wrapped pages
 import PennWrappedCarousel from "./components/penn-wrapped/PennWrappedCarousel";
-import PennWrapped from "./components/penn-wrapped/PennWrapped";
 import MBTI from "./components/penn-wrapped/MBTI";
 import FratParties from "./components/penn-wrapped/FratParties";
 import CloseFriends from "./components/penn-wrapped/CloseFriends";
@@ -38,14 +37,13 @@ export function App() {
             <Route index element={<Home />} />
             <Route path="home" element={<Navigate replace to="/" />} />
             <Route path="penn-in-touch" element={<PennInTouchTest/>} />
-            <Route path="penn-wrapped-test" element={<PennWrappedCarousel />} />
           </Route>
           <Route path="/under-the-button">
             <Route path=":qId" element={<UnderButton />} />
             <Route index element={<UnderButton />} />
           </Route>
           <Route path="/penn-wrapped">
-            <Route path="" element={<PennWrapped />} />
+            <Route path="" element={<PennWrappedCarousel />} />
             <Route path="1" element={<MBTI />} />
             <Route path="2" element={<FratParties />} />
             <Route path="3" element={<CloseFriends />} />

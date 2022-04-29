@@ -5,6 +5,14 @@ import UnderButtonResults from './UnderButtonResults';
 import './UnderButton.scss';
 import axios from 'axios';
 import { ReactComponent as LoginButton } from './svg/button-outline.svg';
+import buttonGreenDown from './svg/buttonGreenDown.svg'
+import buttonRedDown from './svg/buttonRedDown.svg'
+import buttonYellowDown from './svg/buttonYellowDown.svg'
+import buttonDown from './svg/buttonDown.svg'
+import button from './svg/button.svg'
+import buttonRed from './svg/buttonRed.svg'
+import buttonYellow from './svg/buttonYellow.svg'
+import buttonGreen from './svg/buttonGreen.svg'
 
 const UnderButton = () => {
     let { qId } = useParams()
@@ -43,7 +51,12 @@ const UnderButton = () => {
                             Log In
                         </button></Link>}
                 </div>
+                <div>
+
+
+                </div>
             </div>}
+
             {!qId && <br />}
             {qId && qId == "results" && <UnderButtonResults />}
             {qId && qId != "results" && <UnderButtonQuestion qId={qId}></UnderButtonQuestion>}

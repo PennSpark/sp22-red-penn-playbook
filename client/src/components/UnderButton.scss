@@ -182,7 +182,6 @@ input {
   &:hover {
   }
   &:active {
-
   }
   @media (max-width: $small) {
     padding: 0em 1em 3px;
@@ -303,4 +302,61 @@ input {
 .render-everything {
   position: absolute;
   top: -10000px;
+}
+
+@keyframes slidein {
+  from {
+    background: url(svg/button.svg);
+  }
+
+  to {
+    background: url(svg/buttonDown.svg)
+  }
+}
+@keyframes slidein2 {
+  from {
+    background: url(svg/buttonGreen.svg);
+  }
+
+  to {
+    background: url(svg/buttonGreenDown.svg)
+  }
+}
+@keyframes slidein3 {
+  from {
+    background: url(svg/buttonRed.svg);
+  }
+
+  to {
+    background: url(svg/buttonRedDown.svg)
+  }
+}
+@keyframes slidein4 {
+  from {
+    background: url(svg/buttonYellow.svg);
+  }
+
+  to {
+    background: url(svg/buttonYellowDown.svg)
+  }
+}
+
+.anim1{
+  animation: slidein;
+
+}
+.anim2{
+  animation: slidein;
+
+  
+}
+.anim3{
+  animation: slidein;
+
+  
+}
+.anim4{
+  animation: slidein;
+
+  
 }

@@ -10,7 +10,7 @@ const ThreeWords = () => {
       <div className="spacer-10" />
       <div id="tw-text">
         <h1>This semester in 3 words...</h1>
-        <p>adaadfasafsafasdfasaadsfsdfasdfsafasdfasdfasdfasd</p>
+        <p>FUN, BUSY, EXCITING </p>
       </div>
       <div className="spacer-3" />
       <img id="tw-img" src={WordCloudImg} />

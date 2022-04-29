@@ -59,7 +59,6 @@ const MBTI = () => {
                         <p>Prospecting (P)</p>
                     </div>
                 </div>
-                <a href='../../penn-wrapped/2'>View</a>
             </div>
         </div>
     );

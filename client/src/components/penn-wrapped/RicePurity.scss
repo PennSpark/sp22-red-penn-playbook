@@ -1,5 +1,5 @@
 .rp-block {
-    background-color: #EEDC9B;
+    background-color: #ffffff;
 }
 
 #rp-text {
@@ -14,6 +14,14 @@
     color: #2D2D2D;
     font-weight: 700;
     font-size: 3.4rem;
+}
+
+#rp-img {
+  display: inline-block;
+  // position: relative;
+  top: 20vh;
+  transition: 0.2s;
+  width: 40vw;
 }
 
 #rp-text p {

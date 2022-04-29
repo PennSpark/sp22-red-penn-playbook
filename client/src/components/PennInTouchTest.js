@@ -1,12 +1,17 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { pennintouchActions } from '../redux/pennintouch-data';
+import "./PennInTouchTest.css";
 import Draggable from 'react-draggable';
 import axios from 'axios';
 
 
 
-function PennInTouchTEST() {
+const PennInTouchTEST = () => {
+    useEffect(() => {
+        window.scroll(0, 4 * window.innerHeight);
+    }, []);
+
     const [data, setData] = useState([]);
 
     const getData = async () => {
@@ -19,26 +24,22 @@ function PennInTouchTEST() {
     }
 
     getData();
-    
-    //const data = useSelector((state) => state.pennintouchData.data);
-    
+        
     const [active, setActive] = useState({ active: false, x: 0, y: 0 })
 
     const [areaText, setAreaText] = useState("")
 
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const dispatch = useDispatch();
-
     function createText(e) {
         if (!active.active) {
-            setActive({ active: true, x: e.clientX, y: e.clientY })
+            setActive({ active: true, x: e.clientX + window.scrollX, y: e.clientY + window.scrollY })
         }
     }
 
     function handleDrag(e) {
         if (!isSubmitting) {
-            setActive({ active: true, x: e.x-e.offsetX, y: e.y-e.offsetY })
+            setActive({ active: true, x: e.x-e.offsetX + window.scrollX, y: e.y-e.offsetY + window.scrollY })
         }
     }
 
@@ -55,13 +56,12 @@ function PennInTouchTEST() {
 
     function handleTextChange(e) {
         setAreaText(String(e.target.value))
-        
     }
 
     function activeText() {
         if (active.active) {
             return (
-                <Draggable id='dragObj' onStop={(e) => handleDrag(e)} defaultPosition={{ x: active.x, y: active.y }}>
+                <Draggable id='dragObj' onStop={(e) => handleDrag(e)} defaultPosition={{ x: active.x, y: active.y}}>
                     <div>
                         <textarea value={areaText} onInput={(e) => handleTextChange(e)} style={{ color: "black", zIndex: '2' }}>
                         </textarea>
@@ -74,11 +74,19 @@ function PennInTouchTEST() {
 
 
     return (
-        <div>
-            <div style={{ height: '100vh', width: '100vw', position: 'absolute', zIndex: '1' }} onClick={(e) => createText(e)}>
+        <div className = "pit-window">
+            <div className="pit-large-container" onClick={(e) => createText(e)}>
+                <div style={{ color : "black", position: 'absolute', top: (window.innerHeight / 2 * 9) - 100, width: '100vw', display: 'inline-block', whiteSpace: 'pre-wrap'}}>
+                    <div className = "pit-title-container">
+                        <p className = "pit-title">Penn In Touch</p>
+                        <div className = "pit-instructions-container">
+                            <p className = "pit-instructions">Welcome to Penn In Touch! This is a place for celebrations, confessions, and anything in between. Feel free to look around! To enter a story, click anywhere on the page and start typing. NOTE: Please manually shift+enter to create new lines as our website will automatically render everything in one line.</p>
+                        </div>
+                    </div>
+                </div>
                 {data.map(function (text) {
                     return (
-                        <div style={{ color: "black", position: 'absolute', left: text.xpos, top: text.ypos, whiteSpace: 'pre-wrap'}}>
+                        <div style={{ color: "black", position: 'absolute', left: (text.xpos), top: (text.ypos), display: 'inline-block', whiteSpace: 'pre-wrap'}}>
                             {text.text}
                         </div>
                     )

@@ -12,7 +12,7 @@ import Nd6 from "./img/nd/nd-6.svg";
 const NumDates = () => {
   return (
     <div className="pw-container nd-block">
-      <h1>"How many people have you gone on dates with this year?"</h1>
+      <h1>"How many people have you gone on dates with this semester?"</h1>
       <div className="nd-roses">
         <div>
           <img src={Nd0} alt="44.9% went on 0 dates" />

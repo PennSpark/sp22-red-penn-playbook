@@ -7,7 +7,6 @@ import ErrorBoundary from "./components/ErrorHandling/ErrorBoundary";
 
 //pages
 import Form from "./components/Form";
-import Canvas from "./components/Canvas";
 import Home from "./components/Home";
 import UnderButton from "./components/UnderButton";
 import UnderButtonAbout from "./components/UnderButtonAbout";
@@ -27,7 +26,7 @@ import LookingBack from "./components/penn-wrapped/LookingBack";
 
 import HomeAbout from "./components/HomeAbout";
 import MainLayout from "./components/MainLayout";
-import PennInTouchTEST from "./components/PennInTouchTest";
+import PennInTouchTest from "./components/PennInTouchTest";
 
 export function App() {
   return (
@@ -37,8 +36,7 @@ export function App() {
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="home" element={<Navigate replace to="/" />} />
-            <Route path="penn-in-touch" element={<Canvas />} />
-            <Route path="penn-in-touch-test" element={<PennInTouchTEST />} />
+            <Route path="penn-in-touch" element={<PennInTouchTest/>} />
           </Route>
           <Route path="/under-the-button">
             <Route path=":qId" element={<UnderButton />} />

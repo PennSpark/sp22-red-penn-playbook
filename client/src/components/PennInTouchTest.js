@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { pennintouchActions } from '../redux/pennintouch-data';
+import "./PennInTouchTest.css";
 import Draggable from 'react-draggable';
 import axios from 'axios';
 
@@ -28,17 +29,15 @@ function PennInTouchTEST() {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const dispatch = useDispatch();
-
     function createText(e) {
         if (!active.active) {
-            setActive({ active: true, x: e.clientX, y: e.clientY })
+            setActive({ active: true, x: e.clientX + window.scrollX, y: e.clientY + window.scrollY })
         }
     }
 
     function handleDrag(e) {
         if (!isSubmitting) {
-            setActive({ active: true, x: e.x-e.offsetX, y: e.y-e.offsetY })
+            setActive({ active: true, x: e.x-e.offsetX + window.scrollX, y: e.y-e.offsetY + window.scrollY })
         }
     }
 
@@ -61,7 +60,7 @@ function PennInTouchTEST() {
     function activeText() {
         if (active.active) {
             return (
-                <Draggable id='dragObj' onStop={(e) => handleDrag(e)} defaultPosition={{ x: active.x, y: active.y }}>
+                <Draggable id='dragObj' onStop={(e) => handleDrag(e)} defaultPosition={{ x: active.x, y: active.y}}>
                     <div>
                         <textarea value={areaText} onInput={(e) => handleTextChange(e)} style={{ color: "black", zIndex: '2' }}>
                         </textarea>
@@ -74,11 +73,11 @@ function PennInTouchTEST() {
 
 
     return (
-        <div>
-            <div style={{ height: '100vh', width: '100vw', position: 'absolute', zIndex: '1' }} onClick={(e) => createText(e)}>
+        <div className = "pit-window">
+            <div className="pit-large-container" onClick={(e) => createText(e)}>
                 {data.map(function (text) {
                     return (
-                        <div style={{ color: "black", position: 'absolute', left: text.xpos, top: text.ypos, whiteSpace: 'pre-wrap'}}>
+                        <div style={{ color: "black", position: 'absolute', left: (text.xpos), top: (text.ypos), whiteSpace: 'pre-wrap'}}>
                             {text.text}
                         </div>
                     )

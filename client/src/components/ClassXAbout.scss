@@ -106,6 +106,12 @@
     }
 }
 
+.cx-graph-descr {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+
 @media (max-width: 768px) {
     .cx-about_container {
         width: 100%;
@@ -138,7 +144,7 @@
         width: auto;
         margin-bottom: 2rem;
         padding: 15px;
-    
+
         img {
             max-width: 20vw;
             max-height: 20vw;
@@ -152,12 +158,38 @@
         p {
             margin-top: 6px;
         }
+
+    }
+
+    .cx-modal {
+        width: 94vw;
+        left: 3vw;
+        top: calc((100% - 22em) / 2);
+        height: 22em;
+        overflow: auto;
+
+        .iframe-container {
+            position: relative;
+            margin: auto;
+            width: 18em;
+            height: 10em;
+            padding-bottom: 40%;
+        }
+    }
+
+    .cx-graph-descr {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .cx-graph_container {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
-.cx-graph-descr {
-    padding-left: 40px;
-    padding-right: 40px;
+.cx-graph-desc-p {
+    text-align: left;
 }
 
 .square {

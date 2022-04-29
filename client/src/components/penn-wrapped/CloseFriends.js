@@ -9,6 +9,7 @@ import Friends10 from '../svg/friends10.svg';
 import Friends16 from '../svg/friends16.svg';
 
 const CloseFriends = () => {
+    
     return (
         <div className="pw-container cf-big">
             <div className="cf-container">

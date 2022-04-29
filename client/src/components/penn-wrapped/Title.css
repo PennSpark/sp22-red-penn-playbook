@@ -108,3 +108,14 @@
     display: none;
   }
 }
+
+.cf-about {
+    background-color: #ebebeb;
+    position: absolute;
+    border: none;
+    font-size: 20px;
+    font-family: 'HK Grotesk';
+    top: 80px;
+    left: 150px;
+    z-index: 1;
+  }

@@ -4,9 +4,14 @@ import "./Title.css";
 
 
 const Title = () => {
+  const navigate = useNavigate();
+  const about = () => {
+    navigate('../../about/penn-wrapped');
+  }
   return (
     <div className="title-pw-about">
       <div className="title-pw-about_container">
+        <button type="button" className="cf-about" onClick={() => about()}>About</button>
         <div class="year-container">
           <h1 className="year-top-h1">20</h1>
           <h1 className="year-bot-h1">22</h1>

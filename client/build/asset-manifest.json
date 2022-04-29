@@ -1,12 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b7495ed.css",
-    "main.js": "/static/js/main.acea747a.js",
+    "main.css": "/static/css/main.3038c4c5.css",
+    "main.js": "/static/js/main.fb5191af.js",
+    "static/media/rice.gif": "/static/media/rice.dd1a2d0085f7ced0897b.gif",
+    "static/media/vp.svg": "/static/media/vp.01eb4cf090d34dcd4d1e4a920629e89e.svg",
     "static/media/wordcloud2.png": "/static/media/wordcloud2.d0c8604094fd876fffc6.png",
-    "static/media/rice.GIF": "/static/media/rice.125ac5875c4c41d905d3.GIF",
+    "static/media/wawa.svg": "/static/media/wawa.2ca7c4b6343cfe0efb650b964c2ce028.svg",
+    "static/media/college.svg": "/static/media/college.1f475b33dc10f538052b98b0f54a6499.svg",
+    "static/media/love.svg": "/static/media/love.420781b33183c199d157d6a8aefcaf02.svg",
     "static/media/frat0.svg": "/static/media/frat0.8ab4e7db2d9b905776cc1237294b0f59.svg",
     "static/media/frat3.svg": "/static/media/frat3.d8a68defa0c7f9b1c620a351e2ac0cfe.svg",
     "static/media/frat6.svg": "/static/media/frat6.8234b4222a41e11a7a72af203032e7fe.svg",
+    "static/media/tampons.svg": "/static/media/tampons.c3344ae10d1ca2717a64bbf16a3dc0f6.svg",
+    "static/media/button.svg": "/static/media/button.bb4818e6653cfcaadcc0ac7018a8ab5e.svg",
     "static/media/nd-6.svg": "/static/media/nd-6.9bbb21eb2ae97de7217580f0b0380cd6.svg",
     "static/media/nd-3.svg": "/static/media/nd-3.85ddc89b0b0f7d2a2ed86c878a87ed02.svg",
     "static/media/nd-0.svg": "/static/media/nd-0.6343d84fd279637d877d8b88738ec1f3.svg",
@@ -22,7 +28,6 @@
     "static/media/friends4.svg": "/static/media/friends4.4a44fb5b913569e517cc65b67999479f.svg",
     "static/media/button-outline.svg": "/static/media/button-outline.18d5506d210f969494f64f2a9e5725de.svg",
     "static/media/friends0.svg": "/static/media/friends0.f5351a1e2226456d668425f7ccfb122f.svg",
-    "static/media/button.svg": "/static/media/button.bb4818e6653cfcaadcc0ac7018a8ab5e.svg",
     "static/media/buttonGreenDown.svg": "/static/media/buttonGreenDown.bb3c10da73f93bca5098b288ba4c55eb.svg",
     "static/media/buttonRedDown.svg": "/static/media/buttonRedDown.e44a915196f4395061848c771719c33b.svg",
     "static/media/buttonYellowDown.svg": "/static/media/buttonYellowDown.5c29effbbc405f251a493b6e52225ea7.svg",
@@ -32,11 +37,11 @@
     "static/media/buttonGreen.svg": "/static/media/buttonGreen.a7197f9bd869ee2efe65dabd6dff0efa.svg",
     "static/media/buttonRed.svg": "/static/media/buttonRed.f25641836927779c652af23e78695bcf.svg",
     "static/media/rightArrow.svg": "/static/media/rightArrow.1c77fee97c5155ee681a718ef17a8906.svg",
-    "main.1b7495ed.css.map": "/static/css/main.1b7495ed.css.map",
-    "main.acea747a.js.map": "/static/js/main.acea747a.js.map"
+    "main.3038c4c5.css.map": "/static/css/main.3038c4c5.css.map",
+    "main.fb5191af.js.map": "/static/js/main.fb5191af.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b7495ed.css",
-    "static/js/main.acea747a.js"
+    "static/css/main.3038c4c5.css",
+    "static/js/main.fb5191af.js"
   ]
 }

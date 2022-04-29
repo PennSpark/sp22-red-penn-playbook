@@ -29,6 +29,7 @@ const PennWrappedAbout = () => {
             exhibition is still a work in progress, so be sure to check back
             soon!
           </p>
+          <div class="mobile-view-pw-about"><h2>Sorry, this exhibition is only available on Desktop view. Please try again on your computer!</h2></div>
         </div>
       </div>
     </div>

@@ -88,6 +88,10 @@
   font-size: 1.4rem;
 }
 
+.mobile-view-pw-about {
+  display: none;
+}
+
 @media (max-width: 700px) {
   .penn-wrapped-content {
     display: none;
@@ -131,6 +135,14 @@
 
   .pw-about-container svg {
     display: none;
+  }
+
+  .start-container {
+    display: none;
+  }
+
+  .mobile-view-pw-about {
+    display: block;
   }
 }
 

@@ -1,26 +1,19 @@
 import React, { useContext, useState } from 'react'
 import { useParams, Link } from "react-router-dom"
 import './TimesCried.scss';
-import Wawa from './img/wawa.svg';
-import VanPelt from './img/vp.svg';
-import Love from './img/love.svg';
-import College from './img/college.svg';
-import Button from './img/button.svg';
-import Tampons from './img/tampons.svg';
+import Wawa from './img/wawa.png';
+import VanPelt from './img/vp.png';
+import Love from './img/love.png';
+import College from './img/college.png';
+import Button from './img/button.png';
+import Tampons from './img/tampons.png';
 
 const TimesCried = () => {
     return (
         <div className="pw-container">
             <div class="tc-container">
-            <h1>"How many frat parties did you go to?"</h1>
-            <img src={Wawa} />
-            <img src={VanPelt} />
-            <img src={Love} />
-            <img src={College} />
-            <img src={Button} />
-            <img src={Tampons} />
-                <h1>Number of time cried.</h1>
                 <div class="graph-cry">
+                    <h1>Number of time cried.</h1>
                     <div class="bars-cry">
                         <div class='bardiv-cry'>
                             <div class='label-cry'>
@@ -74,6 +67,21 @@ const TimesCried = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="cry-locations">
+                    <h1>Reason for cry</h1>
+                    <div class="img-row">
+                        <img src={Wawa} />
+                        <img src={VanPelt} />
+                    </div>
+                    <div class="img-row">
+                        <img src={Love} id="love" />
+                        <img src={College} id="college" />
+                    </div>
+                    <div class="img-row">
+                        <img src={Button} />
+                        <img src={Tampons} />
                     </div>
                 </div>
             </div>

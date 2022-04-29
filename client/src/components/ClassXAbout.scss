@@ -14,11 +14,6 @@
     margin-right: auto;
 }
 
-// .cx-graph-descr {
-//   text-align: left;
-//   width: 60px;
-// }
-
 .cx-active {
     width: 60px;
     height: 80px;
@@ -61,10 +56,10 @@
     cursor: pointer;
 }
 
-.cx-bg {
-  background-color: #000000;
-  z-index: .5;
-}
+// .cx-bg {
+//   background-color: #000000;
+//   z-index: .5;
+// }
 
 .cx-modal {
     background-color: #fefefe;
@@ -176,6 +171,7 @@
 }
 
 .cx-graph_container {
+    background-color: #ebebeb;
     text-align: center;
     margin-left: auto;
     margin-right: auto;

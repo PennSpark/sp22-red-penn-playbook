@@ -40,13 +40,13 @@ const ClassXAbout = () => {
     <>
       <div>
         <div className="cx-active" />
-        <div className="cx-about_container">
-          <h1 className="about-h1">Class X</h1>
-          <p className="about-p">
-            10 seniors, 10 interviews, and 23 days of mood and energy tracking. This one’s for the class of 2022: the seniors who have made it through four years of Penn. Despite mostly entering in the same year, living in the same dorms, studying in the same spaces, and even joining many of the same groups, the Penn journey and experience looks wildly different for each of us. Each Class X member filled out a daily survey for three weeks asking about their day and also shared their experiences in a casual interview. Ultimately, Class X represents how there never was one answer or destination at Penn, and despite being adults about to enter the “real world”, we’re all still very much learning and growing.
-          </p>
+          <div className="cx-about_container">
+            <h1 className="about-h1">Class X</h1>
+            <p className="about-p">
+              10 seniors, 10 interviews, and 23 days of mood and energy tracking. This one’s for the class of 2022: the seniors who have made it through four years of Penn. Despite mostly entering in the same year, living in the same dorms, studying in the same spaces, and even joining many of the same groups, the Penn journey and experience looks wildly different for each of us. Each Class X member filled out a daily survey for three weeks asking about their day and also shared their experiences in a casual interview. Ultimately, Class X represents how there never was one answer or destination at Penn, and despite being adults about to enter the “real world”, we’re all still very much learning and growing.
+            </p>
+          </div>
         </div>
-      </div>
       <div className="cx-cards">
         <div className="row">
           {values.slice(0, 5).map((v) => (
@@ -91,8 +91,8 @@ const ClassXAbout = () => {
       }
 
       <div className="cx-graph_container">
-        <h1 className="about-h1">Mood + Energy + Sleep Through 23 Days</h1>
-        <div className = "cs-graph-descr">
+        <h1 className="about-h1">22 Days of the Class of 2022</h1>
+        <div>
           <p> Across 22 days in April, Class X members filled out a daily survey recording summary stats and sentiments about their day. 
             We asked each senior to rate their mood and energy from 1-10 (10 is most positive/highest energy) and describe how much they 
             agree/disagree with specific statements.  <br />

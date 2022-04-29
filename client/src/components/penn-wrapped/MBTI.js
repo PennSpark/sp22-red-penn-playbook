@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react'
 import { useParams, Link } from "react-router-dom"
-import './MBTI.css'
+import './MBTI.scss'
 
 const MBTI = () => {
     return (
-        <div className="pw-container">
+        <div className="pw-container mbti-block">
             <div class="mbti-container">
                 <h1>Our personality is</h1>
                 <div class="trait-pair-container">

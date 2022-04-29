@@ -15,6 +15,7 @@ import ClassXAbout from "./components/ClassXAbout";
 import PennWrappedAbout from "./components/PennWrappedAbout";
 
 // penn wrapped pages
+import PennWrappedCarousel from "./components/penn-wrapped/PennWrappedCarousel";
 import PennWrapped from "./components/penn-wrapped/PennWrapped";
 import MBTI from "./components/penn-wrapped/MBTI";
 import FratParties from "./components/penn-wrapped/FratParties";
@@ -37,6 +38,7 @@ export function App() {
             <Route index element={<Home />} />
             <Route path="home" element={<Navigate replace to="/" />} />
             <Route path="penn-in-touch" element={<PennInTouchTest/>} />
+            <Route path="penn-wrapped-test" element={<PennWrappedCarousel />} />
           </Route>
           <Route path="/under-the-button">
             <Route path=":qId" element={<UnderButton />} />

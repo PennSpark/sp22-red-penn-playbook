@@ -43,7 +43,7 @@ const LookingBack = () => {
                 <div class="bar5"/>
               </div>
             </div>
-              <p>I know what I want to do in the future</p>
+              <p class="statement">I know what I want to do in the future</p>
           </div>
           <div class="graph">
             <div class="bars">
@@ -68,7 +68,7 @@ const LookingBack = () => {
                 <div class="bar5"/>
               </div>
             </div>
-            <p>I changed significantly this semester</p>
+            <p class="statement">I changed significantly this semester</p>
           </div>
           <div class="graph">
             <div class="bars">
@@ -93,7 +93,7 @@ const LookingBack = () => {
                   <div class="bar5"/>
                 </div>
             </div>
-            <p>I have no regrets about this semester</p>
+            <p class="statement">I have no regrets about this semester</p>
           </div>
         </div>
       </div>

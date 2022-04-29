@@ -1,20 +1,24 @@
 import React, { useContext, useState } from 'react'
 import { useParams, Link } from "react-router-dom"
 import './TimesCried.scss';
-import Frat0 from '../svg/frat0.svg';
-import Frat3 from '../svg/frat3.svg';
-import Frat6 from '../svg/frat6.svg';
+import Wawa from './img/wawa.svg';
+import VanPelt from './img/vp.svg';
+import Love from './img/love.svg';
+import College from './img/college.svg';
+import Button from './img/button.svg';
+import Tampons from './img/tampons.svg';
 
 const TimesCried = () => {
     return (
         <div className="pw-container">
             <div class="tc-container">
             <h1>"How many frat parties did you go to?"</h1>
-                <div class="fp-row">
-                    <img src={Frat0} alt="28.1% have 1-3 close friends" />
-                    <img src={Frat3} alt="44.5% have 4-6 close friends" />
-                    <img src={Frat6} alt="16.4% have 7-9 close friends" />
-                </div>
+            <img src={Wawa} />
+            <img src={VanPelt} />
+            <img src={Love} />
+            <img src={College} />
+            <img src={Button} />
+            <img src={Tampons} />
             </div>
         </div>
     );

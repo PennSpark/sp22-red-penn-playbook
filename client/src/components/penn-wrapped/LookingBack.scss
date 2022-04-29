@@ -35,6 +35,7 @@ $purple: #EBD4DF;
 .graph-container {
     display: flex;
     justify-content: space-around;
+    margin-top: -15vh;
 }
 
 .graph {
@@ -42,6 +43,10 @@ $purple: #EBD4DF;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    .statement {
+        margin-top: 80px;
+    }
 }
 
 // @keyframes slidein {

@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./PennWrappedAbout.scss";
-import RightArrow from "./svg/rightArrow.svg";
+import { ReactComponent as RightArrow } from "./svg/rightArrow.svg";
 
 
 const PennWrappedAbout = () => {

@@ -79,8 +79,8 @@ const ClassXAbout = () => {
 
       {show && <div class="cx-modal" fullscreen={fullscreen} >
         <div class="cx-modal-heading">
-          <h1>{senior}</h1>
           <span class="close" onClick={() => setShow(false)}>&times;</span>
+          <h1>{senior}</h1>
         </div>
         <div class="iframe-container">
           <iframe src={link} class="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

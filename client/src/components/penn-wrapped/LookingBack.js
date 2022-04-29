@@ -43,27 +43,57 @@ const LookingBack = () => {
                 <div class="bar5"/>
               </div>
             </div>
-              <p>I know what I want to do in the future</p>
+              <p class="statement">I know what I want to do in the future</p>
           </div>
           <div class="graph">
             <div class="bars">
-              <div class="bar1" style={{ height: "9%" }} />
-              <div class="bar2" style={{ height: "24%" }} />
-              <div class="bar3" style={{ height: "31%" }} />
-              <div class="bar4" style={{ height: "59%" }} />
-              <div class="bar5" style={{ height: "23%" }} />
+              <div style={{ height: "9%" }}>
+                <p>9%</p>
+                <div class="bar1" />
+              </div>
+              <div style={{ height: "24%" }}>
+                <p>24%</p>
+                <div class="bar2" />
+              </div>
+              <div style={{ height: "31%" }}>
+                <p>31%</p>
+                <div class="bar3" />
+              </div>
+              <div style={{ height: "59%" }} >
+                <p>59%</p>
+                <div class="bar4"/>
+              </div>
+              <div style={{ height: "23%" }} >
+                <p>23% </p>
+                <div class="bar5"/>
+              </div>
             </div>
-            <p>I changed significantly this semester</p>
+            <p class="statement">I changed significantly this semester</p>
           </div>
           <div class="graph">
             <div class="bars">
-              <div class="bar1" style={{ height: "17%" }} />
-              <div class="bar2" style={{ height: "55%" }} />
-              <div class="bar3" style={{ height: "25%" }} />
-              <div class="bar4" style={{ height: "37%" }} />
-              <div class="bar5" style={{ height: "12%" }} />
+              <div style={{ height: "17%" }}>
+                  <p>17%</p>
+                  <div class="bar1" />
+                </div>
+                <div style={{ height: "55%" }}>
+                  <p>55%</p>
+                  <div class="bar2" />
+                </div>
+                <div style={{ height: "25%" }}>
+                  <p>25%</p>
+                  <div class="bar3" />
+                </div>
+                <div style={{ height: "37%" }} >
+                  <p>37%</p>
+                  <div class="bar4"/>
+                </div>
+                <div style={{ height: "12%" }} >
+                  <p>12% </p>
+                  <div class="bar5"/>
+                </div>
             </div>
-            <p>I have no regrets about this semester</p>
+            <p class="statement">I have no regrets about this semester</p>
           </div>
         </div>
       </div>

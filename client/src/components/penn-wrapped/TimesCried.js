@@ -10,11 +10,6 @@ const TimesCried = () => {
         <div className="pw-container">
             <div class="tc-container">
             <h1>"How many frat parties did you go to?"</h1>
-                <div class="fp-row">
-                    <img src={Frat0} alt="28.1% have 1-3 close friends" />
-                    <img src={Frat3} alt="44.5% have 4-6 close friends" />
-                    <img src={Frat6} alt="16.4% have 7-9 close friends" />
-                </div>
             </div>
         </div>
     );

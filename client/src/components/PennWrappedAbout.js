@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./PennWrappedAbout.css";
-import { ReactComponent as RightArrow } from "./svg/rightArrow.svg";
+import "./PennWrappedAbout.scss";
+import RightArrow from "./svg/rightArrow.svg";
 
 
 const PennWrappedAbout = () => {
@@ -20,7 +20,7 @@ const PennWrappedAbout = () => {
         <div class="pw-about-container">
           <h1 className="about-h1">Penn Wrapped</h1>
           <div class="start-container">
-            <RightArrow />
+          <img src={RightArrow} alt="Arrow pointing right"/>
             <button type="button" className="utb-about" onClick={() => start()}>Start</button>
           </div>
           <p className="about-p">

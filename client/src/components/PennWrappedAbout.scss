@@ -39,15 +39,34 @@
 
 .pw-about-container {
   text-align: left;
+
+  h1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    font-size: 100px;
+    line-height: 120px;
+    max-width: 500px;
+  }
+
+  img {
+    width: 45vw;
+  }
+
+  button {
+    margin: 0;
+    padding: 0;
+    color: #577ED2;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
 }
 
-.pw-about-container h1 {
-  margin-top: 0px;
-  margin-bottom: 20px;
-  margin-right: 0px;
-  font-size: 100px;
-  line-height: 120px;
-  max-width: 500px;
+.start-container {
+  display: flex;
+  gap: 20px;
 }
 
 .pw-about-container p {
@@ -117,8 +136,8 @@
 
 
 .utb-about {
-    background-color: #ebebeb;
-    border: none;
-    font-size: 40px;
-    font-family: "HK Grotesk";
-  }
+  background-color: #ebebeb;
+  border: none;
+  font-size: 40px;
+  font-family: "HK Grotesk";
+}

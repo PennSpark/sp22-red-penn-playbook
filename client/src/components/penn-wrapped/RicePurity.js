@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import "./style.scss";
 import "./RicePurity.scss";
-import rice from "./img/rice.gif"
+import rice from "./img/rice.GIF"
 
 const RicePurity = () => {
   return (

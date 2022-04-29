@@ -42,6 +42,23 @@
     margin-top: -80px;
 }
 
+.pit-viewWall {
+    background-color: #ebebeb;
+    border: none;
+    font-size: 20px;
+    font-family: 'HK Grotesk';
+    margin-top: 20px;
+    color: #577ED2;
+  }
+
+  .pit-viewWall:hover {
+    cursor: pointer;
+  }
+
+  .pit-mobile-view {
+      display: none;
+  }
+
 
 @media (max-width: 768px) {
     .about-h1 {
@@ -68,4 +85,13 @@
         margin-right: 15px;
         margin-top: -41px;
     }
+
+    .pit-link-container {
+        display: none;
+    }
+
+    .pit-mobile-view {
+        display: block;
+    }
 }
+

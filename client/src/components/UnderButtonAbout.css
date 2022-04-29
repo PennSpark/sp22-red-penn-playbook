@@ -26,6 +26,10 @@
     color: #2D2D2D;
 }
 
+.take-quiz:hover {
+    cursor: pointer;
+}
+
 .utb-p {
     font-family: 'HK Grotesk';
     font-style: normal;

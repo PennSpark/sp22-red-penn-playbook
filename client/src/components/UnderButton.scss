@@ -196,7 +196,7 @@ input {
   background-repeat: no-repeat;
   background-position: center bottom;
   width: 23vh;
-  height: 20vh;
+  height: 16vh;
 }
 #no-button + .button-label{
   background: url(svg/buttonRed.svg);
@@ -204,7 +204,7 @@ input {
   background-repeat: no-repeat;
   background-position: center bottom;
   width: 23vh;
-  height: 20vh;
+  height: 16vh;
 }
 #maybe-button + .button-label{
   background: url(svg/buttonGreen.svg);
@@ -212,7 +212,7 @@ input {
   background-repeat: no-repeat;
   background-position: center bottom;
   width: 23vh;
-  height: 20vh;
+  height: 16vh;
 }
 #other-button + .button-label{
   background: url(svg/buttonYellow.svg);
@@ -220,7 +220,7 @@ input {
   background-repeat: no-repeat;
   background-position: center bottom;
   width: 23vh;
-  height: 20vh;
+  height: 16vh;
 }
 
 #yes-button:checked + .button-label {

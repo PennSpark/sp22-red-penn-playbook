@@ -185,13 +185,13 @@ const data = [
     amt21: 12,
     amt22: 12
   },
-  {
-    name: '04-23',
-    Mood: 8.125,
-    Energy: 7.5,
-    "Amount of Sleep": 6.25,
-    amt22: 12,
-  },
+  // {
+  //   name: '04-23',
+  //   Mood: 8.125,
+  //   Energy: 7.5,
+  //   "Amount of Sleep": 6.25,
+  //   amt22: 12,
+  // },
 ];
 
 const CustomTooltip = ({ active, payload, label }) => {

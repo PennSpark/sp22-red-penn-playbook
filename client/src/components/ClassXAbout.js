@@ -17,7 +17,7 @@ const ClassXAbout = () => {
     { name: "Matthew Li", quote: "\"Life is for the living” - Dan Jai", link: "https://www.youtube.com/embed/ruo2iCRbzNQ", img: "https://drive.google.com/uc?export=view&id=1YhgzK2u7s-fswLH4fUXrftyyc9nhCUWx" },
     { name: "Maya Patel", quote: "\"...People will forget what you said, people will forget what you did, but people will never forget how you made them feel.\" - Maya Angelou", link: "https://www.youtube.com/embed/bZHW30cW6Do", img: "https://drive.google.com/uc?export=view&id=1cCxU_r6Q8--N4dzkmpBkvQ2PCkO6m9ax" },
     { name: "Jashee Yang", quote: "\"naurrrr\" - trialpha", link: "https://www.youtube.com/embed/tL32v3FZh3k", img: "http://drive.google.com/uc?export=view&id=1OCgd4RxufJtKYKFdXgYXrT7cseHHnZN0" },
-    { name: "Jediah Katz", quote: "\"If youth was not wasted, how could it be youth?” – Viet Thanh Nguyen\"", link: "link10", img: "https://drive.google.com/uc?export=view&id=1qP7tazcWdbO4MiikmE33X_kgnwRC4cJm" },
+    { name: "Jediah Katz", quote: "\"If youth was not wasted, how could it be youth?” – Viet Thanh Nguyen\"", link: "https://www.youtube.com/embed/QTjpkn7MM3Y", img: "https://drive.google.com/uc?export=view&id=1qP7tazcWdbO4MiikmE33X_kgnwRC4cJm" },
   ];
 
   const [fullscreen, setFullscreen] = useState(true);
@@ -92,8 +92,26 @@ const ClassXAbout = () => {
 
       <div className="cx-graph_container">
         <h1 className="about-h1">Mood + Energy + Sleep Through 23 Days</h1>
+        <div className = "cs-graph-descr">
+          <p> Across 22 days in April, Class X members filled out a daily survey recording summary stats and sentiments about their day. 
+            We asked each senior to rate their mood and energy from 1-10 (10 is most positive/highest energy) and describe how much they 
+            agree/disagree with specific statements.  <br />
+            In the scatter plot below, we plotted the energy level, mood, and amount of sleep for each day averaged across all 10 members. 
+            The background color of the plot corresponds to a different quadrant on a coordinate plane representing different levels of energy and mood. 
+            The four quadrants/colors are:   <br />
+          </p>
+          <p> 
+            1. BLUE: Low energy, low mood  <br />
+            2. YELLOW: High energy, high mood  <br />
+            3. GREEN: Low energy, high mood  <br />
+            4. RED: High energy, low mood  <br />
+        </p>
+        </div>
         <ClassXLineGraph />
         {/* <ClassXScatterPlot /> */}
+        <p>
+          In this bar chart, we graphed the total ratings of each option (strongly disagree, disagree, neither, agree, strongly agree) for the 4 statements across the entire survey period.
+        </p>
         <ClassXBarChart />
       </div>
       {/* <ClassXBlockGraph /> */}

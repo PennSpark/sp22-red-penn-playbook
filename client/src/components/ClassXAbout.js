@@ -10,14 +10,14 @@ const ClassXAbout = () => {
   const values = [
     { name: "Abigail Norwillo", quote: "\"Sell your clothes and keep your thoughts\" - Henry David Thoreau", link: "https://www.youtube.com/embed/dgZ3oO6NtNs", img: "https://drive.google.com/uc?export=view&id=1fE6XftsJdhIAdmE735XvM0qkAW26hkrH" },
     { name: "Abraham Frey", quote: "\"I feel so clean like a money machine\"- 100 gecs", link: "https://www.youtube.com/embed/TMqjJfxX1lk", img: "https://drive.google.com/uc?export=view&id=1z7KHGVkLLJiuyQinZH894dJRqYe7fuKt" },
-    { name: "Amanda Xu", quote: "\"“Stop asking permission and go get it\" - Cece Parekh, New Girl", link: "https://www.youtube.com/embed/JoCNJAikWaY", img: "https://drive.google.com/uc?export=view&id=1qCmVzfNKOY7CpqbDmV5k6GEOhCANzSiV" },
+    { name: "Amanda Xu", quote: "\"Stop asking permission and go get it\" - Cece Parekh, New Girl", link: "https://www.youtube.com/embed/JoCNJAikWaY", img: "https://drive.google.com/uc?export=view&id=1qCmVzfNKOY7CpqbDmV5k6GEOhCANzSiV" },
     { name: "Felicia Chen", quote: "\"Hope is a function of struggle—we develop hope not during the easy or comfortable times, but through adversity and discomfort.\" - Brené Brown", link: "https://www.youtube.com/embed/kmfsiRh8eQw", img: "https://drive.google.com/uc?export=view&id=1JcLBtVmU_hcGZFF5HO-_4zJUA0mfo6QC" },
     { name: "Grace Jiang", quote: "\"i hate andrew jiang\" - Grace Jiang", link: "https://www.youtube.com/embed/0a-Mo2B4yFo", img: "http://drive.google.com/uc?export=view&id=1Q0EH6nzse474kOgxLi2t4NBVHLZeM_t4" },
-    { name: "Matthew Jortberg", quote: "\"We're here to put a dent in the universe. Otherwise why else even be here?” - Steve Jobs\"", link: "https://www.youtube.com/embed/oRJORX-8Vpc", img: "https://drive.google.com/uc?export=view&id=1-JGJLU791OwYFxzrmUZAbKYlchK-O1LS" },
+    { name: "Matthew Jortberg", quote: "\"We're here to put a dent in the universe. Otherwise why else even be here?” - Steve Jobs", link: "https://www.youtube.com/embed/oRJORX-8Vpc", img: "https://drive.google.com/uc?export=view&id=1-JGJLU791OwYFxzrmUZAbKYlchK-O1LS" },
     { name: "Matthew Li", quote: "\"Life is for the living” - Dan Jai", link: "https://www.youtube.com/embed/ruo2iCRbzNQ", img: "https://drive.google.com/uc?export=view&id=1YhgzK2u7s-fswLH4fUXrftyyc9nhCUWx" },
     { name: "Maya Patel", quote: "\"...People will forget what you said, people will forget what you did, but people will never forget how you made them feel.\" - Maya Angelou", link: "https://www.youtube.com/embed/bZHW30cW6Do", img: "https://drive.google.com/uc?export=view&id=1cCxU_r6Q8--N4dzkmpBkvQ2PCkO6m9ax" },
     { name: "Jashee Yang", quote: "\"naurrrr\" - trialpha", link: "https://www.youtube.com/embed/tL32v3FZh3k", img: "http://drive.google.com/uc?export=view&id=1OCgd4RxufJtKYKFdXgYXrT7cseHHnZN0" },
-    { name: "Jediah Katz", quote: "\"If youth was not wasted, how could it be youth?” – Viet Thanh Nguyen\"", link: "link10", img: "https://drive.google.com/uc?export=view&id=1qP7tazcWdbO4MiikmE33X_kgnwRC4cJm" },
+    { name: "Jediah Katz", quote: "\"If youth was not wasted, how could it be youth?” – Viet Thanh Nguyen", link: "link10", img: "https://drive.google.com/uc?export=view&id=1qP7tazcWdbO4MiikmE33X_kgnwRC4cJm" },
   ];
 
   const [fullscreen, setFullscreen] = useState(true);

@@ -59,9 +59,9 @@ export default function Works() {
         {data.map((d) => (
           <div className="container">
             <div className="item">
-              {d.id == "Title" && <Title />}
-              {d.id == "NumDates" && <NumDates />}
-              {d.id == "RicePurity" && <RicePurity />}
+              {d.id == "Title" && <Title  />}
+              {d.id == "NumDates" && <NumDates slide={currentSlide}/>}
+              {d.id == "RicePurity" && <RicePurity slide={currentSlide}/>}
               {d.id == "ThreeWords" && <ThreeWords />}
               {d.id == "CloseFriends" && <CloseFriends />}
               {d.id == "FratParties" && <FratParties />}

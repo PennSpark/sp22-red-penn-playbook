@@ -1,6 +1,10 @@
 .tw-block {
     background-color: #54706B;
     transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
 }
 
 .tw-block h1 {
@@ -17,7 +21,6 @@
 #tw-text {
     display: inline-block;
     position: relative;
-    top: 20vh;
     transition: 0.2s;
     width: 30vw;
 }
@@ -25,7 +28,6 @@
 #tw-img {
     display: inline-block;
     position: relative;
-    top: 20vh;
     transition: 0.2s;
     width: 50vw;
 }

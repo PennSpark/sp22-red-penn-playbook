@@ -1,11 +1,14 @@
 .rp-block {
     background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
 }
 
 #rp-text {
     display: inline-block;
     position: relative;
-    top: 26vh;
     transition: 0.2s;
     width: 38vw;
 }
@@ -17,11 +20,9 @@
 }
 
 #rp-img {
-  display: inline-block;
   // position: relative;
-  top: 20vh;
   transition: 0.2s;
-  width: 40vw;
+  width: 530px;
 }
 
 #rp-text p {

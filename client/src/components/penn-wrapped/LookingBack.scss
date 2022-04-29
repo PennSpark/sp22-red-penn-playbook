@@ -44,6 +44,16 @@ $purple: #EBD4DF;
     text-align: center;
 }
 
+@keyframes slidein {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 51%;
+  }
+}
+
 .bars {
     display: flex;
     align-items: flex-end;
@@ -52,8 +62,11 @@ $purple: #EBD4DF;
     width: 30vw;
 
     div {
-        height: 10em;
+        height: 100%;
         width: 5vw;
+        animation-name: slidein;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
     }
 }
 

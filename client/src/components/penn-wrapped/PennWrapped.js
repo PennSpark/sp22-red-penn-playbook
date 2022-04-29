@@ -22,7 +22,7 @@ const PennWrapped = () => {
         <div className="pw-block"><ThreeWords /></div>
         <div className="pw-block"><CloseFriends /></div>
         <div className="pw-block"><FratParties /></div>
-        <div className="pw-block"><LeastFavClass /></div>
+        {/* <div className="pw-block"><LeastFavClass /></div> */}
         <div className="pw-block"><LookingBack /></div>
         <div className="pw-block"><MBTI /></div>
         <div className="pw-block"><TimesCried /></div>

@@ -22,13 +22,28 @@ const LookingBack = () => {
         <div class="graph-container">
           <div class="graph">
             <div class="bars">
-              <div class="bar1" style={{ height: "14%" }} />
-              <div class="bar2" style={{ height: "39%" }} />
-              <div class="bar3" style={{ height: "27%" }} />
-              <div class="bar4" style={{ height: "50%" }} />
-              <div class="bar5" style={{ height: "16%" }} />
+              <div style={{ height: "14%" }}>
+                <p>14%</p>
+                <div class="bar1" />
+              </div>
+              <div style={{ height: "39%" }}>
+                <p>39%</p>
+                <div class="bar2" />
+              </div>
+              <div style={{ height: "27%" }}>
+                <p>27%</p>
+                <div class="bar3" />
+              </div>
+              <div style={{ height: "50%" }} >
+                <p>50%</p>
+                <div class="bar4"/>
+              </div>
+              <div style={{ height: "16%" }} >
+                <p>16% </p>
+                <div class="bar5"/>
+              </div>
             </div>
-            <p>I know what I want to do in the future</p>
+              <p>I know what I want to do in the future</p>
           </div>
           <div class="graph">
             <div class="bars">

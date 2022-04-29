@@ -16,6 +16,14 @@
     font-size: 3.4rem;
 }
 
+#rp-img {
+  display: inline-block;
+  // position: relative;
+  top: 20vh;
+  transition: 0.2s;
+  width: 40vw;
+}
+
 #rp-text p {
     font-size: 1.4rem;
 }

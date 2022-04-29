@@ -7,7 +7,7 @@ const LookingBack = () => {
     <div className="pw-container" style={{background: '#3D3339'}}>
       {""}
       <div class="lb-container">
-      <h1 style = {{textAlign: 'center', color: '#efefef'}}>"How many frat parties did you go to?"</h1>
+      <h1 style = {{textAlign: 'center', color: '#efefef'}}>Agree or Disagree?</h1>
         <div class="key">
           <div class="box1" />
           <p>Strongly disagree</p>

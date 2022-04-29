@@ -66,7 +66,7 @@ export default function Works() {
               {d.id == "CloseFriends" && <CloseFriends />}
               {d.id == "FratParties" && <FratParties />}
               {d.id == "LookingBack" && <LookingBack />}
-              {d.id == "MBTI" && <MBTI />}
+              {d.id == "MBTI" && <MBTI slide={currentSlide}/>}
               {d.id == "TimesCried" && <TimesCried />}
             </div>
           </div>

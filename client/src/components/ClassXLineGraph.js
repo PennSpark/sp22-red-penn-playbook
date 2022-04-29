@@ -212,7 +212,7 @@ export default class ClassXLineGraph extends PureComponent {
       <ResponsiveContainer width={'100%'} height={300}>
         <ComposedChart 
 
-          width={500}
+          width={1500}
           height={300}
           data={data}
           margin={{

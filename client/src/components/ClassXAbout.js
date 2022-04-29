@@ -8,15 +8,15 @@ import ClassXBarChart from './ClassXBarChart';
 
 const ClassXAbout = () => {
   const values = [
-    { name: "Abigail Norwillo", quote: "quote 1", link: "https://www.youtube.com/embed/dgZ3oO6NtNs", img: "https://cdn.arstechnica.net/wp-content/uploads/2021/05/catsquare3-640x426.jpg" },
+    { name: "Abigail Norwillo", quote: "\"Sell your clothes and keep your thoughts\" - Henry David Thoreau", link: "https://www.youtube.com/embed/dgZ3oO6NtNs", img: "https://drive.google.com/uc?export=view&id=1fE6XftsJdhIAdmE735XvM0qkAW26hkrH" },
     { name: "Abraham Frey", quote: "quote 2", link: "link2", img: "https://cdn.arstechnica.net/wp-content/uploads/2021/05/catsquare3-640x426.jpg" },
     { name: "Amanda Xu", quote: "quote 3", link: "https://www.youtube.com/embed/JoCNJAikWaY", img: "https://cdn.arstechnica.net/wp-content/uploads/2021/05/catsquare3-640x426.jpg" },
     { name: "Felicia Chen", quote: "\"Hope is a function of struggle—we develop hope not during the easy or comfortable times, but through adversity and discomfort.\" - Brené Brown", link: "https://www.youtube.com/embed/kmfsiRh8eQw", img: "https://drive.google.com/uc?export=view&id=1JcLBtVmU_hcGZFF5HO-_4zJUA0mfo6QC" },
-    { name: "Grace Jiang", quote: "quote 5", link: "https://www.youtube.com/embed/0a-Mo2B4yFo", img: "https://cdn.arstechnica.net/wp-content/uploads/2021/05/catsquare3-640x426.jpg" },
+    { name: "Grace Jiang", quote: "\"i hate andrew jiang\" - Grace Jiang", link: "https://www.youtube.com/embed/0a-Mo2B4yFo", img: "http://drive.google.com/uc?export=view&id=1Q0EH6nzse474kOgxLi2t4NBVHLZeM_t4" },
     { name: "Matthew Jortberg", quote: "\"We're here to put a dent in the universe. Otherwise why else even be here?” - Steve Jobs\"", link: "https://www.youtube.com/embed/oRJORX-8Vpc", img: "https://drive.google.com/uc?export=view&id=1-JGJLU791OwYFxzrmUZAbKYlchK-O1LS" },
-    { name: "Matthew Li", quote: "\"Life is for the living” - Dan Jai\"", link: "link7", img: "https://drive.google.com/uc?export=view&id=1YhgzK2u7s-fswLH4fUXrftyyc9nhCUWx" },
+    { name: "Matthew Li", quote: "\"Life is for the living” - Dan Jai", link: "link7", img: "https://drive.google.com/uc?export=view&id=1YhgzK2u7s-fswLH4fUXrftyyc9nhCUWx" },
     { name: "Maya Patel", quote: "\"...People will forget what you said, people will forget what you did, but people will never forget how you made them feel.\" - Maya Angelou", link: "https://www.youtube.com/embed/bZHW30cW6Do", img: "https://drive.google.com/uc?export=view&id=1cCxU_r6Q8--N4dzkmpBkvQ2PCkO6m9ax" },
-    { name: "Jashee Yang", quote: "quote 9", link: "link9", img: "https://cdn.arstechnica.net/wp-content/uploads/2021/05/catsquare3-640x426.jpg" },
+    { name: "Jashee Yang", quote: "\"naurrrr\" - trialpha", link: "link9", img: "http://drive.google.com/uc?export=view&id=1OCgd4RxufJtKYKFdXgYXrT7cseHHnZN0" },
     { name: "Jediah Katz", quote: "\"If youth was not wasted, how could it be youth?” – Viet Thanh Nguyen\"", link: "link10", img: "https://drive.google.com/uc?export=view&id=1qP7tazcWdbO4MiikmE33X_kgnwRC4cJm" },
   ];
 
@@ -87,7 +87,7 @@ const ClassXAbout = () => {
         </div>
       </div>}
 
-      <div className="cx-about_container">
+      <div className="cx-graph_container">
         <h1 className="about-h1">Mood + Energy + Sleep Through 23 Days</h1>
         <ClassXLineGraph />
         {/* <ClassXScatterPlot /> */}

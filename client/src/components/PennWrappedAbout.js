@@ -21,7 +21,7 @@ const PennWrappedAbout = () => {
           <h1 className="about-h1">Penn Wrapped</h1>
           <div class="start-container">
             <RightArrow />
-            <button type="button" className="utb-about" onClick={() => start()}>Start</button>
+            <button type="button" className="pw-start" onClick={() => start()}>Start</button>
           </div>
           <p className="about-p">
             Inspired by Spotify Wrapped, Penn Wrapped is a compilation of survey

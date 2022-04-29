@@ -36,7 +36,7 @@ export function App() {
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="home" element={<Navigate replace to="/" />} />
-            <Route path="penn-in-touch-test" element={<PennInTouchTest/>} />
+            <Route path="penn-in-touch" element={<PennInTouchTest/>} />
           </Route>
           <Route path="/under-the-button">
             <Route path=":qId" element={<UnderButton />} />

@@ -1,8 +1,29 @@
 .tc-container {
+    display: flex;
+    padding: 40px;
     background-color: #A6CEE3;
     min-width: 100vw;
     min-height: 100vh;
+
+    h1 {
+        margin-top: 0;
+    }
+
+    .img-row {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    img {
+        max-width: 200px;
+    }
+
+    #love,
+    #college {
+        max-width: 150px;
+    }
 }
+
 .graph-cry {
     display: flex;
     flex-direction: column;
@@ -12,6 +33,7 @@
         margin-top: 80px;
     }
 }
+
 .bars-cry {
     display: flex;
     flex-direction: column;
@@ -19,16 +41,22 @@
     height: 70vh;
     width: 30vw;
 
+    p {
+        margin-top: 0;
+    }
+
     div {
         height: 100%;
         // animation-name: slidein;
         // animation-duration: 1s;
         // animation-fill-mode: forwards;
     }
+
     .bardiv-cry {
         display: flex;
         align-items: center;
     }
+
     .label-cry {
         width: 20%;
         align-self: flex-end;

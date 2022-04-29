@@ -12,7 +12,7 @@ const RicePurity = () => {
           <h1>On average, our rice purity score dropped <span style={{color: "#577ED2"}}>5.9 points</span>.</h1>
       </div>
       <div className="rp-right" />
-        <img id="rp-img" src={rice} />
+        {/* <img id="rp-img" src={rice} /> */}
     </div>
   );
 };

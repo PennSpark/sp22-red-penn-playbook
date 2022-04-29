@@ -6,7 +6,7 @@ import rice from "./img/rice.gif"
 import { Spring, useSpring, config, animated } from 'react-spring';
 
 const RicePurity = (p) => {
-  const props = useSpring({ val: 4.9, from: { val: 0 }, delay: 100, reset: true, config: { duration: 1000 } });
+  const props = useSpring({ val: 5.9, from: { val: 0 }, delay: 100, reset: true, config: { duration: 1000 } });
   const [on, set] = useState(true);
 
   console.log(p.slide)

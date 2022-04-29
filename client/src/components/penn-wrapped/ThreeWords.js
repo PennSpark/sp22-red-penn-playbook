@@ -9,7 +9,7 @@ const ThreeWords = () => {
     <div className="pw-container tw-block">
       <div id="tw-text">
         <h1>This semester in 3 words...</h1>
-        <p>FUN, BUSY, EXCITING </p>
+        <p></p>
       </div>
       <img id="tw-img" src={WordCloudImg} />
     </div>

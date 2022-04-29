@@ -1,3 +1,36 @@
 .tc-container {
     background-color: #A6CEE3;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.graph-cry {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .statement {
+        margin-top: 80px;
+    }
+}
+.bars-cry {
+    display: flex;
+    flex-direction: column;
+    //align-items: flex-end;
+    height: 70vh;
+    width: 30vw;
+
+    div {
+        height: 100%;
+        // animation-name: slidein;
+        // animation-duration: 1s;
+        // animation-fill-mode: forwards;
+    }
+    .bardiv-cry {
+        display: flex;
+        align-items: center;
+    }
+    .label-cry {
+        width: 20%;
+        align-self: flex-end;
+    }
 }

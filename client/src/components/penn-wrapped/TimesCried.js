@@ -2,11 +2,17 @@ import React, { useContext, useState } from 'react'
 import { useParams, Link } from "react-router-dom"
 import './TimesCried.scss';
 import Wawa from './img/wawa.png';
+import WawaFlip from './img/wawa-flip.png';
 import VanPelt from './img/vp.png';
+import VanPeltFlip from './img/vp-flip.png';
 import Love from './img/love.png';
+import LoveFlip from './img/love-flip.png';
 import College from './img/college.png';
+import CollegeFlip from './img/college-flip.png';
 import Button from './img/button.png';
+import ButtonFlip from './img/button-flip.png';
 import Tampons from './img/tampons.png';
+import TamponsFlip from './img/tampons-flip.png';
 
 const TimesCried = () => {
     return (
@@ -72,16 +78,16 @@ const TimesCried = () => {
                 <div class="cry-locations">
                     <h1>Reason for cry</h1>
                     <div class="img-row">
-                        <img src={Wawa} />
-                        <img src={VanPelt} />
+                        <div class="image-wrapper-wawa"><img src={Wawa} id="wawa" /><img src={WawaFlip} id="wawa-flip" /></div>
+                        <div class="image-wrapper-vp"><img src={VanPelt} id="vp" /><img src={VanPeltFlip} id="vp-flip" /></div>
                     </div>
                     <div class="img-row">
-                        <img src={Love} id="love" />
-                        <img src={College} id="college" />
+                        <div class="image-wrapper-love"><img src={Love} id="love" /><img src={LoveFlip} id="love-flip" /></div>
+                        <div class="image-wrapper-college"><img src={College} id="college" /><img src={CollegeFlip} id="college-flip" /></div>
                     </div>
                     <div class="img-row">
-                        <img src={Button} />
-                        <img src={Tampons} />
+                        <div class="image-wrapper-button"><img src={Button} id="button" /><img src={ButtonFlip} id="button-flip" /></div>
+                        <div class="image-wrapper-tampons"><img src={Tampons} id="tampons" /><img src={TamponsFlip} id="tampons-flip" /></div>
                     </div>
                 </div>
             </div>

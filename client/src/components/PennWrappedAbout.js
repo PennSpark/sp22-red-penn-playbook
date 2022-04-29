@@ -25,9 +25,7 @@ const PennWrappedAbout = () => {
           </div>
           <p className="about-p">
             Inspired by Spotify Wrapped, Penn Wrapped is a compilation of survey
-            data on the experiences of Penn students this semester. This
-            exhibition is still a work in progress, so be sure to check back
-            soon!
+            data on the experiences of Penn students this semester.
           </p>
           <div class="mobile-view-pw-about"><h2>Sorry, this exhibition is only available on Desktop view. Please try again on your computer!</h2></div>
         </div>

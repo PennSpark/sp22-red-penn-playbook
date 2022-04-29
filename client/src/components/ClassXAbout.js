@@ -91,8 +91,13 @@ const ClassXAbout = () => {
       }
 
       <div className="cx-graph_container">
+<<<<<<< HEAD
         <h1 className="about-h1">22 Days of the Class of 2022</h1>
         <div>
+=======
+        <h1 className="about-h1">Mood + Energy + Sleep Through 23 Days</h1>
+        <div className = "cx-graph-descr">
+>>>>>>> bb8d2e2 (delete single line)
           <p> Across 22 days in April, Class X members filled out a daily survey recording summary stats and sentiments about their day. 
             We asked each senior to rate their mood and energy from 1-10 (10 is most positive/highest energy) and describe how much they 
             agree/disagree with specific statements.  <br />
